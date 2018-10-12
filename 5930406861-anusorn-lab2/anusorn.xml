@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<myself>
+    my name is <name>Anusorn Plaekjangreed </name>
+    <email>p_anusorn@kkumail.com</email>
+    <facebook>Anusorn Plaekjangreed</facebook>
+	<my_hometown>Khonkaen</my_hometown>
+	<birthday> 27/07/1997 </birthday>
+	<hobbies>
+		<hobby type="one" > basketball</hobby>
+		<hobby type="two" > plays game</hobby>
+		<hobby type="three" > trading cryptocurrency </hobby>
+		<hobby type="four" > read a book </hobby>
+	</hobbies>
+	<tel/>
+</myself>
