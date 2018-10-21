@@ -127,7 +127,14 @@ function SetIPOne() {
     var IPOne10 = document.getElementById("10").value;
     var IPOne11 = document.getElementById("11").value;
     var IPOne12 = document.getElementById("12").value;
+
+    if (IPOne7==""||IPOne8==""||IPOne9==""||IPOne10==""||IPOne11==""||IPOne12=="")
+    {
+        document.getElementById("ShowIP1").innerHTML = "Key IP Address again. ";
+    }
+    else{
     document.getElementById("ShowIP1").innerHTML = "192.168."+IPOne7+IPOne8+IPOne9+"."+IPOne10+IPOne11+IPOne12;
+}
 }
 
 
