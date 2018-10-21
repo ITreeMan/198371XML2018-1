@@ -120,6 +120,8 @@ function validateNumber(event) {
 
 
 
+/* Fix IP */
+
 function SetIPOne() {
     var IPOne7 = document.getElementById("7").value;
     var IPOne8 = document.getElementById("8").value;
@@ -134,6 +136,8 @@ function SetIPOne() {
     }
     else{
     document.getElementById("ShowIP1").innerHTML = "192.168."+IPOne7+IPOne8+IPOne9+"."+IPOne10+IPOne11+IPOne12;
+    document.getElementById("ShowIPSelect1").innerHTML = "192.168."+IPOne7+IPOne8+IPOne9+"."+IPOne10+IPOne11+IPOne12;
+    document.getElementById("ShowIPSelect4").innerHTML = "192.168."+IPOne7+IPOne8+IPOne9+"."+IPOne10+IPOne11+IPOne12;
 }
 }
 
@@ -154,6 +158,8 @@ function SetIPTwo() {
     }
     else{
     document.getElementById("ShowIP2").innerHTML = "192.168."+IPTwo19+IPTwo20+IPTwo21+"."+IPTwo22+IPTwo23+IPTwo24;
+    document.getElementById("ShowIPSelect2").innerHTML = "192.168."+IPTwo19+IPTwo20+IPTwo21+"."+IPTwo22+IPTwo23+IPTwo24;
+    document.getElementById("ShowIPSelect5").innerHTML = "192.168."+IPTwo19+IPTwo20+IPTwo21+"."+IPTwo22+IPTwo23+IPTwo24;
 }
 }
 
@@ -174,8 +180,33 @@ function SetIPThree() {
     }
     else{
     document.getElementById("ShowIP3").innerHTML = "192.168."+IPThree31+IPThree32+IPThree33+"."+IPThree34+IPThree35+IPThree36;
+    document.getElementById("ShowIPSelect3").innerHTML = "192.168."+IPThree31+IPThree32+IPThree33+"."+IPThree34+IPThree35+IPThree36;
+    document.getElementById("ShowIPSelect6").innerHTML = "192.168."+IPThree31+IPThree32+IPThree33+"."+IPThree34+IPThree35+IPThree36;
 }
 }
 
 
 
+
+
+
+
+
+/* Ping Script  */
+
+
+
+var colors = ['1abc9c', '2c3e50', '2980b9', '7f8c8d', 'f1c40f', 'd35400', '27ae60'];
+
+colors.each(function (color) {
+  $$('.color-picker')[0].insert(
+    '<div class="square" style="background: #' + color + '"></div>'
+  );
+});
+
+$$('.color-picker')[0].on('click', '.square', function(event, square) {
+  background = square.getStyle('background');
+  $$('.custom-dropdown select').each(function (dropdown) {
+    dropdown.setStyle({'background' : background});
+  });
+});

@@ -234,9 +234,21 @@
 
     <div id="pingArea">
         <label>Ping from </label>
-        <input type='text' id='source' required placeholder='source'>
+        <span class="custom-dropdown big">
+                <select>    
+                    <option id="ShowIPSelect1" >PC1</option>
+                    <option id="ShowIPSelect2"  >PC2</option>  
+                    <option id="ShowIPSelect3" > PC3 </option>
+                </select>
+            </span>
         <label> to </label>
-        <input type='text' id='destination' required placeholder='destination'>
+        <span class="custom-dropdown-two big">
+                <select>    
+                    <option id="ShowIPSelect4" >PC1</option>
+                    <option id="ShowIPSelect5"  >PC2</option>  
+                    <option id="ShowIPSelect6" > PC3 </option>
+                </select>
+            </span>
         <button id="pingBtn" class="pure-button" onclick="addTableData()">ok</button>
     </div>
     <br>
