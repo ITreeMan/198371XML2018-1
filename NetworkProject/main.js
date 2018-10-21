@@ -140,5 +140,35 @@ function SetIPTwo() {
     var IPTwo22 = document.getElementById("22").value;
     var IPTwo23 = document.getElementById("23").value;
     var IPTwo24 = document.getElementById("24").value;
+
+    if (IPTwo19==""||IPTwo20==""||IPTwo21==""||IPTwo22==""||IPTwo23==""||IPTwo24=="")
+    {
+        document.getElementById("ShowIP2").innerHTML = "Key IP Address again. ";
+    }
+    else{
     document.getElementById("ShowIP2").innerHTML = "192.168."+IPTwo19+IPTwo20+IPTwo21+"."+IPTwo22+IPTwo23+IPTwo24;
 }
+}
+
+
+
+function SetIPThree() {
+    var IPThree31 = document.getElementById("31").value;
+    var IPThree32 = document.getElementById("32").value;
+    var IPThree33 = document.getElementById("33").value;
+    var IPThree34 = document.getElementById("34").value;
+    var IPThree35 = document.getElementById("35").value;
+    var IPThree36 = document.getElementById("36").value;
+    var x = document.getElementById("ShowIP3").value;
+
+    if (IPThree31==""||IPThree32==""||IPThree33==""||IPThree34==""||IPThree35==""||IPThree36=="")
+    {
+        document.getElementById("ShowIP3").innerHTML = "Key IP Address again. ";
+    }
+    else{
+    document.getElementById("ShowIP3").innerHTML = "192.168."+IPThree31+IPThree32+IPThree33+"."+IPThree34+IPThree35+IPThree36;
+}
+}
+
+
+
