@@ -1,0 +1,139 @@
+body{
+    font-family: 'Inconsolata', monospace;
+}
+img {
+    display: block;
+    margin: 0 auto;
+}
+table {
+    display:table;
+    width: 40%;
+    margin: 0px auto; 
+}
+
+
+th {
+    text-align: center;
+}
+.center-align{
+    text-align: center;
+}
+.grid-item {
+    margin: 2% auto; 
+}
+.grid-container {
+    margin-top: 1%;
+    margin-bottom: 3%;
+    margin-left: 5%;
+    grid-template-columns: 220px  220px 220px;
+    display: grid;
+    font-size:14px;
+    grid-gap: 75px;
+
+  }
+
+
+.pc-label {
+    text-align: center;
+}
+
+
+
+.tableHeader {
+    text-align: center;
+}
+.header {
+    background-color: cadetblue;
+}
+
+.pure-button {
+    
+    display: inline-block;
+    padding: 0.46em 1.6em;
+    border: 0.1em solid #5f9ea0;
+    margin: 0 0.2em 0.2em 0;
+    border-radius: 0.12em;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-weight: 300;
+    color: #000000;
+    text-shadow: 0 0.04em 0.04em rgba(0, 0, 0, 0.35);
+    background-color: #5f9ea0;
+    text-align: center;
+    transition: all 0.15s;
+}
+
+
+/* #container {
+    width: 90%;
+    margin-top: 2%;
+    margin: 2% auto; 
+}
+#leftContainer {
+    float: left;
+    width: 70%;
+}
+#rightContainer {
+    float: right;
+    width: 30%;
+}
+#col1 {
+    float: left;
+    width: 50%;
+}
+#col2 {
+    float: right;
+    width: 50%;
+} */
+
+#pingArea {
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+}
+
+
+
+.clock {
+    color:black;
+    border-style:none;
+    width:14px;
+    height:20px;
+    font-size:14px;
+    text-align: center;
+    background-color : #d1d1d1; 
+ 
+/*แก้ตรงนี้นะ บบ */  }
+  
+
+
+td{
+    border:1px solid white  ;
+    
+  }
+
+  .clockDot{       /*ขนาดของ . */
+    color:black;
+    border-style:none;
+    width:1px;
+    font-size:24px; 
+  }
+ 
+
+
+
+th, td {
+    padding: 0px;
+
+}
+
+.text-size{
+    text-align: center;
+    font-size:14px; 
+}
+
+p{
+
+    width: 20%;
+    margin: 0px auto; 
+}
