@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\Labcom9\Desktop\LAB7 - Sec3 - Group6 - Board\LAB7\seg7_decoder.ncd
-OUTFILE=C:\Users\Labcom9\Desktop\LAB7 - Sec3 - Group6 - Board\LAB7\seg7_decoder.bit
-FAMILY=Spartan3
-PART=xc3s200-4tq144
-WORKINGDIR=C:\Users\Labcom9\Desktop\LAB7 - Sec3 - Group6 - Board\LAB7
-LICENSE=WebPack
-USER_INFO=208478922_0_0_054
