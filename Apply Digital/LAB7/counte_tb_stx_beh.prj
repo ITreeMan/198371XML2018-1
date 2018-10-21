@@ -1,0 +1,3 @@
+vhdl isim_temp "lab03_pack.vhd"
+vhdl isim_temp "seg7_decoder.vhd"
+vhdl isim_temp "counte_tb.vhd"
