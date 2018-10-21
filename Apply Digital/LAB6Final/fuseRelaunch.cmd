@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/ITreeMan/Downloads/Lab6Digi/New folder/LAB6Final/counte_tb_isim_beh.exe" -prj "C:/Users/ITreeMan/Downloads/Lab6Digi/New folder/LAB6Final/counte_tb_beh.prj" "work.counte_tb" 

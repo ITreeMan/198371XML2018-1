@@ -1,0 +1,18 @@
+V3 8
+FL "C:/Users/Areeya Vansin/Desktop/LAB7 - Sec3 - Group6 - Board/LAB7/lab03_pack.vhd" 2017/09/11.14:39:40 P.20131013
+FL "C:/Users/Areeya Vansin/Desktop/LAB7 - Sec3 - Group6 - Board/LAB7/seg7_decoder.vhd" 2017/10/16.15:04:58 P.20131013
+FL "C:/Users/Labcom9/Desktop/LAB7 - Sec3 - Group6 - Board/LAB7/lab03_pack.vhd" 2017/09/11.14:39:40 P.20131013
+PH work/lab03_pack 1508151269 \
+      FL "C:/Users/Labcom9/Desktop/LAB7 - Sec3 - Group6 - Board/LAB7/lab03_pack.vhd" \
+      PB ieee/std_logic_1164 1381692176
+PB work/lab03_pack 1508151270 \
+      FL "C:/Users/Labcom9/Desktop/LAB7 - Sec3 - Group6 - Board/LAB7/lab03_pack.vhd" \
+      PH work/lab03_pack 1508151269
+FL "C:/Users/Labcom9/Desktop/LAB7 - Sec3 - Group6 - Board/LAB7/seg7_decoder.vhd" 2017/10/16.17:53:40 P.20131013
+EN work/seg7_decoder 1508151271 \
+      FL "C:/Users/Labcom9/Desktop/LAB7 - Sec3 - Group6 - Board/LAB7/seg7_decoder.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB work/lab03_pack 1508151270
+AR work/seg7_decoder/Behavioral 1508151272 \
+      FL "C:/Users/Labcom9/Desktop/LAB7 - Sec3 - Group6 - Board/LAB7/seg7_decoder.vhd" \
+      EN work/seg7_decoder 1508151271
