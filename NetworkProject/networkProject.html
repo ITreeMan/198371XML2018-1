@@ -18,25 +18,7 @@
             <th>Mac Adress</th>
             <th>Type</th>
             <th>Ports</th>
-            <!-- </tr>
-        <tr class="pure-table-odd">
-            <td id ="vlan1">bhjbh</td>
-            <td for="macAd"></td>
-            <td for="type"></td>
-            <td for="port"></td>
-        </tr>
-        <tr>
-            <td for="vlan"></td>
-            <td for="macAd"></td>
-            <td for="type"></td>
-            <td for="port"></td>
-        </tr>
-        <tr class="pure-table-odd">
-            <td for="vlan"></td>
-            <td for="macAd"></td>
-            <td for="type"></td>
-            <td for="port"></td>
-        </tr> !-->
+
     </table>
 
     
@@ -94,7 +76,11 @@
                     <label for='mac1'>Mac Address : E8-DF-DC-BF-E0-62</label>
                 </div>
             <br>
-            <button class="pure-button">ok</button>
+            <div>
+                    IP Address : <label id="ShowIP1"></label>
+                </div>
+            <br>
+            <button onclick="SetIPOne()" class="pure-button">ok</button>
 
         </div>
     
@@ -154,13 +140,17 @@
                     <label for='mac2'>Mac Address : 1E-64-20-70-15-D9</label>
                 </div>
                 <br>
-            <button class="pure-button">ok</button>
+            <div>
+                    IP Address : <label id="ShowIP2"></label>
+                </div>
+            <br>
+            <button onclick="SetIPTwo()" class="pure-button">ok</button>
 
         </div>
 
 
 
-        <div class="grid-item1">
+        <div class="grid-item">
             <h4 class="pc-label"> PC 3</h4>
             
 

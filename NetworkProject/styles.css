@@ -7,7 +7,7 @@ img {
 }
 table {
     display:table;
-    width: 40%;
+    width: 50%;
     margin: 0px auto; 
 }
 
@@ -22,13 +22,15 @@ th {
     margin: 2% auto; 
 }
 .grid-container {
-    margin-top: 1%;
+    margin-top: 1% ;
     margin-bottom: 3%;
-    margin-left: 5%;
+    margin-left: 10%;
     grid-template-columns: 220px  220px 220px;
     display: grid;
-    font-size:14px;
-    grid-gap: 75px;
+    font-size:20px;
+    grid-gap: 15%;
+    width: 90%;
+
 
   }
 
@@ -41,9 +43,11 @@ th {
 
 .tableHeader {
     text-align: center;
+    font-size: 24px;
 }
 .header {
     background-color: cadetblue;
+    font-size: 18px;
 }
 
 .pure-button {
@@ -97,9 +101,9 @@ th {
 .clock {
     color:black;
     border-style:none;
-    width:14px;
-    height:20px;
-    font-size:14px;
+    width:20px;
+    height:28px;
+    font-size:20px;
     text-align: center;
     background-color : #d1d1d1; 
  
@@ -116,7 +120,7 @@ td{
     color:black;
     border-style:none;
     width:1px;
-    font-size:24px; 
+    font-size:28px; 
   }
  
 
@@ -128,12 +132,17 @@ th, td {
 }
 
 .text-size{
+    color:black;
+    border-style:none;
+    width:20px;
+    height:28px;
+    font-size:20px;
     text-align: center;
-    font-size:14px; 
+
+    
 }
 
 p{
-
-    width: 20%;
+    width: 30%;
     margin: 0px auto; 
 }

@@ -117,3 +117,28 @@ function validateNumber(event) {
     	return true;
     }
 };
+
+
+
+function SetIPOne() {
+    var IPOne7 = document.getElementById("7").value;
+    var IPOne8 = document.getElementById("8").value;
+    var IPOne9 = document.getElementById("9").value;
+    var IPOne10 = document.getElementById("10").value;
+    var IPOne11 = document.getElementById("11").value;
+    var IPOne12 = document.getElementById("12").value;
+    document.getElementById("ShowIP1").innerHTML = "192.168."+IPOne7+IPOne8+IPOne9+"."+IPOne10+IPOne11+IPOne12;
+}
+
+
+
+
+function SetIPTwo() {
+    var IPTwo19 = document.getElementById("19").value;
+    var IPTwo20 = document.getElementById("20").value;
+    var IPTwo21 = document.getElementById("21").value;
+    var IPTwo22 = document.getElementById("22").value;
+    var IPTwo23 = document.getElementById("23").value;
+    var IPTwo24 = document.getElementById("24").value;
+    document.getElementById("ShowIP2").innerHTML = "192.168."+IPTwo19+IPTwo20+IPTwo21+"."+IPTwo22+IPTwo23+IPTwo24;
+}
