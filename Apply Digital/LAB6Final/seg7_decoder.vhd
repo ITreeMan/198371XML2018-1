@@ -10,6 +10,10 @@ entity seg7_decoder is
 			  Seg7 : out  STD_LOGIC_VECTOR (7 downto 0);
            clk : in  STD_LOGIC;
 			  digit : out STD_LOGIC_VECTOR (3 downto 0) := "0000";
+			           digit1 : OUT  std_logic_vector(3 downto 0);
+         digit2 : OUT  std_logic_vector(3 downto 0);
+         digit3 : OUT  std_logic_vector(3 downto 0);
+         digit4 : OUT  std_logic_vector(3 downto 0);
 			  pb1 : in STD_LOGIC:='0';
 			  pb2 : in STD_LOGIC:='0';			  			  
 			  pb3 : in STD_LOGIC:='0';

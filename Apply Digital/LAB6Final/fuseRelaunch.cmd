@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "C:/Users/ITreeMan/Downloads/Lab6Digi/New folder/LAB6Final/counte_tb_isim_beh.exe" -prj "C:/Users/ITreeMan/Downloads/Lab6Digi/New folder/LAB6Final/counte_tb_beh.prj" "work.counte_tb" 
+-intstyle "ise" -incremental -o "C:/Users/ITreeMan/Documents/198371XML2018-1/Apply Digital/LAB6Final/counte_tb_isim_beh.exe" -prj "C:/Users/ITreeMan/Documents/198371XML2018-1/Apply Digital/LAB6Final/counte_tb_beh.prj" "work.counte_tb" 

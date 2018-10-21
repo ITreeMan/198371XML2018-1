@@ -8,10 +8,7 @@
 <!-- Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.    -->
 
 <messages>
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/ITreeMan/Downloads/Lab6Digi/New folder/LAB6Final/lab03_pack.vhd&quot; into library work</arg>
-</msg>
-
-<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/ITreeMan/Downloads/Lab6Digi/New folder/LAB6Final/seg7_decoder.vhd&quot; into library work</arg>
+<msg type="info" file="ProjectMgmt" num="1061" ><arg fmt="%s" index="1">Parsing VHDL file &quot;C:/Users/ITreeMan/Documents/198371XML2018-1/Apply Digital/LAB6Final/counte_tb.vhd&quot; into library work</arg>
 </msg>
 
 </messages>
