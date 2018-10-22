@@ -1,0 +1,458 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.11 secs
+ 
+--> Reading design: seg7_decoder.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "seg7_decoder.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "seg7_decoder"
+Output Format                      : NGC
+Target Device                      : xc3s200-4-tq144
+
+---- Source Options
+Top Module Name                    : seg7_decoder
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 500
+Add Generic Clock Buffer(BUFG)     : 8
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "F:/Lab6/lab03_pack.vhd" in Library work.
+Package <lab03_pack> compiled.
+Package body <lab03_pack> compiled.
+Compiling vhdl file "F:/Lab6/seg7_decoder.vhd" in Library work.
+Entity <seg7_decoder> compiled.
+Entity <seg7_decoder> (Architecture <Behavioral>) compiled.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <seg7_decoder> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <seg7_decoder> in library <work> (Architecture <Behavioral>).
+WARNING:Xst:819 - "F:/Lab6/seg7_decoder.vhd" line 43: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <pb5>
+WARNING:Xst:819 - "F:/Lab6/seg7_decoder.vhd" line 40: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <Bin_in>, <pb2>, <pb3>, <pb4>
+Entity <seg7_decoder> analyzed. Unit <seg7_decoder> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <seg7_decoder>.
+    Related source file is "F:/Lab6/seg7_decoder.vhd".
+    Found 16x8-bit ROM for signal <seg7_temp>.
+    Found 4-bit up counter for signal <minute1>.
+    Found 4-bit comparator greatequal for signal <minute1$cmp_ge0000> created at line 55.
+    Found 4-bit comparator less for signal <minute1$cmp_lt0000> created at line 52.
+    Found 4-bit comparator less for signal <minute1$cmp_lt0001> created at line 49.
+    Found 4-bit up counter for signal <minute2>.
+    Found 4-bit comparator greatequal for signal <minute2$cmp_ge0000> created at line 58.
+    Found 4-bit comparator less for signal <minute2$cmp_lt0000> created at line 55.
+    Found 4-bit register for signal <Reg_D>.
+    Found 4-bit up counter for signal <second1>.
+    Found 4-bit comparator greatequal for signal <second1$cmp_ge0000> created at line 49.
+    Found 4-bit up counter for signal <second2>.
+    Found 4-bit comparator greatequal for signal <second2$cmp_ge0000> created at line 52.
+    Found 1-bit register for signal <state>.
+    Summary:
+	inferred   1 ROM(s).
+	inferred   4 Counter(s).
+	inferred   5 D-type flip-flop(s).
+	inferred   7 Comparator(s).
+Unit <seg7_decoder> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Counters                                             : 4
+ 4-bit up counter                                      : 4
+# Registers                                            : 2
+ 1-bit register                                        : 1
+ 4-bit register                                        : 1
+# Comparators                                          : 7
+ 4-bit comparator greatequal                           : 4
+ 4-bit comparator less                                 : 3
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+
+Synthesizing (advanced) Unit <seg7_decoder>.
+INFO:Xst:3034 - In order to maximize performance and save block RAM resources, the small ROM <Mrom_seg7_temp> will be implemented on LUT. If you want to force its implementation on block, use option/constraint rom_style.
+Unit <seg7_decoder> synthesized (advanced).
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# ROMs                                                 : 1
+ 16x8-bit ROM                                          : 1
+# Counters                                             : 4
+ 4-bit up counter                                      : 4
+# Registers                                            : 5
+ Flip-Flops                                            : 5
+# Comparators                                          : 7
+ 4-bit comparator greatequal                           : 4
+ 4-bit comparator less                                 : 3
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+
+Optimizing unit <seg7_decoder> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block seg7_decoder, actual ratio is 2.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 21
+ Flip-Flops                                            : 21
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : seg7_decoder.ngr
+Top Level Output File Name         : seg7_decoder
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 34
+
+Cell Usage :
+# BELS                             : 85
+#      LUT2                        : 14
+#      LUT2_L                      : 1
+#      LUT3                        : 15
+#      LUT3_L                      : 7
+#      LUT4                        : 39
+#      LUT4_D                      : 3
+#      LUT4_L                      : 4
+#      MUXF5                       : 1
+#      VCC                         : 1
+# FlipFlops/Latches                : 21
+#      FDCPE                       : 16
+#      FDE                         : 4
+#      FDR                         : 1
+# Clock Buffers                    : 2
+#      BUFGP                       : 2
+# IO Buffers                       : 32
+#      IBUF                        : 8
+#      OBUF                        : 24
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s200tq144-4 
+
+ Number of Slices:                       46  out of   1920     2%  
+ Number of Slice Flip Flops:             21  out of   3840     0%  
+ Number of 4 input LUTs:                 83  out of   3840     2%  
+ Number of IOs:                          34
+ Number of bonded IOBs:                  34  out of     97    35%  
+ Number of GCLKs:                         2  out of      8    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)  | Load  |
+-----------------------------------+------------------------+-------+
+clk                                | BUFGP                  | 20    |
+pb5                                | BUFGP                  | 1     |
+-----------------------------------+------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+------------------------------------------+------------------------+-------+
+Control Signal                            | Buffer(FF name)        | Load  |
+------------------------------------------+------------------------+-------+
+minute1_0__and0000(minute1_0__and00001:O) | NONE(minute1_0)        | 1     |
+minute1_0__and0001(minute1_0__and00011:O) | NONE(minute1_0)        | 1     |
+minute1_1__and0000(minute1_1__and00001:O) | NONE(minute1_1)        | 1     |
+minute1_1__and0001(minute1_1__and00011:O) | NONE(minute1_1)        | 1     |
+minute1_2__and0000(minute1_2__and00001:O) | NONE(minute1_2)        | 1     |
+minute1_2__and0001(minute1_2__and00011:O) | NONE(minute1_2)        | 1     |
+minute1_3__and0000(minute1_3__and00001:O) | NONE(minute1_3)        | 1     |
+minute1_3__and0001(minute1_3__and00011:O) | NONE(minute1_3)        | 1     |
+minute2_0__and0000(minute2_0__and00001:O) | NONE(minute2_0)        | 1     |
+minute2_0__and0001(minute2_0__and00011:O) | NONE(minute2_0)        | 1     |
+minute2_1__and0000(minute2_1__and00001:O) | NONE(minute2_1)        | 1     |
+minute2_1__and0001(minute2_1__and00011:O) | NONE(minute2_1)        | 1     |
+minute2_2__and0000(minute2_2__and00001:O) | NONE(minute2_2)        | 1     |
+minute2_2__and0001(minute2_2__and00011:O) | NONE(minute2_2)        | 1     |
+minute2_3__and0000(minute2_3__and00001:O) | NONE(minute2_3)        | 1     |
+minute2_3__and0001(minute2_3__and00011:O) | NONE(minute2_3)        | 1     |
+second1_0__and0000(second1_0__and000011:O)| NONE(second1_0)        | 1     |
+second1_0__and0001(second1_0__and000111:O)| NONE(second1_0)        | 1     |
+second1_1__and0000(second1_1__and000011:O)| NONE(second1_1)        | 1     |
+second1_1__and0001(second1_1__and000111:O)| NONE(second1_1)        | 1     |
+second1_2__and0000(second1_2__and000011:O)| NONE(second1_2)        | 1     |
+second1_2__and0001(second1_2__and000111:O)| NONE(second1_2)        | 1     |
+second1_3__and0000(second1_3__and000011:O)| NONE(second1_3)        | 1     |
+second1_3__and0001(second1_3__and000111:O)| NONE(second1_3)        | 1     |
+second2_0__and0000(second2_0__and00001:O) | NONE(second2_0)        | 1     |
+second2_0__and0001(second2_0__and00011:O) | NONE(second2_0)        | 1     |
+second2_1__and0000(second2_1__and00001:O) | NONE(second2_1)        | 1     |
+second2_1__and0001(second2_1__and00011:O) | NONE(second2_1)        | 1     |
+second2_2__and0000(second2_2__and00001:O) | NONE(second2_2)        | 1     |
+second2_2__and0001(second2_2__and00011:O) | NONE(second2_2)        | 1     |
+second2_3__and0000(second2_3__and00001:O) | NONE(second2_3)        | 1     |
+second2_3__and0001(second2_3__and00011:O) | NONE(second2_3)        | 1     |
+------------------------------------------+------------------------+-------+
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 5.616ns (Maximum Frequency: 178.063MHz)
+   Minimum input arrival time before clock: 8.171ns
+   Maximum output required time after clock: 9.138ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'clk'
+  Clock period: 5.616ns (frequency: 178.063MHz)
+  Total number of paths / destination ports: 171 / 34
+-------------------------------------------------------------------------
+Delay:               5.616ns (Levels of Logic = 2)
+  Source:            second1_2 (FF)
+  Destination:       minute2_3 (FF)
+  Source Clock:      clk rising
+  Destination Clock: clk rising
+
+  Data Path: second1_2 to minute2_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDCPE:C->Q            6   0.720   1.342  second1_2 (second1_2)
+     LUT4_D:I0->O          3   0.551   0.933  Reg_D_and000011 (N17)
+     LUT4:I3->O            4   0.551   0.917  second2_and00011 (second2_and0001)
+     FDCPE:CE                  0.602          second2_3
+    ----------------------------------------
+    Total                      5.616ns (2.424ns logic, 3.192ns route)
+                                       (43.2% logic, 56.8% route)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'pb5'
+  Clock period: 3.593ns (frequency: 278.290MHz)
+  Total number of paths / destination ports: 1 / 1
+-------------------------------------------------------------------------
+Delay:               3.593ns (Levels of Logic = 0)
+  Source:            state (FF)
+  Destination:       state (FF)
+  Source Clock:      pb5 rising
+  Destination Clock: pb5 rising
+
+  Data Path: state to state
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDR:C->Q             31   0.720   1.847  state (state)
+     FDR:R                     1.026          state
+    ----------------------------------------
+    Total                      3.593ns (1.746ns logic, 1.847ns route)
+                                       (48.6% logic, 51.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'clk'
+  Total number of paths / destination ports: 103 / 32
+-------------------------------------------------------------------------
+Offset:              8.171ns (Levels of Logic = 4)
+  Source:            pb1 (PAD)
+  Destination:       minute2_3 (FF)
+  Destination Clock: clk rising
+
+  Data Path: pb1 to minute2_3
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O            28   0.821   1.898  pb1_IBUF (pb1_IBUF)
+     LUT4:I2->O            1   0.551   1.140  minute2_and000117 (minute2_and000117)
+     LUT3:I0->O            1   0.551   1.140  minute2_and000125 (minute2_and000125)
+     LUT4:I0->O            4   0.551   0.917  minute2_and000144 (minute2_and0001)
+     FDCPE:CE                  0.602          minute2_3
+    ----------------------------------------
+    Total                      8.171ns (3.076ns logic, 5.095ns route)
+                                       (37.6% logic, 62.4% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'clk'
+  Total number of paths / destination ports: 47 / 24
+-------------------------------------------------------------------------
+Offset:              9.138ns (Levels of Logic = 2)
+  Source:            Reg_D_3 (FF)
+  Destination:       Seg7<7> (PAD)
+  Source Clock:      clk rising
+
+  Data Path: Reg_D_3 to Seg7<7>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q              8   0.720   1.422  Reg_D_3 (Reg_D_3)
+     LUT3:I0->O            1   0.551   0.801  Mrom_seg7_temp12 (Seg7_0_OBUF)
+     OBUF:I->O                 5.644          Seg7_0_OBUF (Seg7<0>)
+    ----------------------------------------
+    Total                      9.138ns (6.915ns logic, 2.223ns route)
+                                       (75.7% logic, 24.3% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 6.00 secs
+Total CPU time to Xst completion: 5.76 secs
+ 
+--> 
+
+Total memory usage is 259888 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    2 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

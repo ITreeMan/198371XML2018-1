@@ -1,0 +1,4 @@
+AR seg7_decoder behavioral "C:/Users/ITreeMan/Downloads/LAB7 - Sec3 - Group6 - Board - Final/LAB7 - Sec3 - Group6 - Board - Final/LAB7/seg7_decoder.vhd" sub00/vhpl03 1540193727
+PH lab03_pack NULL "C:/Users/ITreeMan/Downloads/LAB7 - Sec3 - Group6 - Board - Final/LAB7 - Sec3 - Group6 - Board - Final/LAB7/lab03_pack.vhd" sub00/vhpl00 1540193724
+EN seg7_decoder NULL "C:/Users/ITreeMan/Downloads/LAB7 - Sec3 - Group6 - Board - Final/LAB7 - Sec3 - Group6 - Board - Final/LAB7/seg7_decoder.vhd" sub00/vhpl02 1540193726
+PB lab03_pack lab03_pack "C:/Users/ITreeMan/Downloads/LAB7 - Sec3 - Group6 - Board - Final/LAB7 - Sec3 - Group6 - Board - Final/LAB7/lab03_pack.vhd" sub00/vhpl01 1540193725

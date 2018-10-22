@@ -1,0 +1,4 @@
+AR seg7_decoder behavioral F:/Lab6/seg7_decoder.vhd sub00/vhpl03 1540193397
+PH lab03_pack NULL F:/Lab6/lab03_pack.vhd sub00/vhpl00 1540193394
+EN seg7_decoder NULL F:/Lab6/seg7_decoder.vhd sub00/vhpl02 1540193396
+PB lab03_pack lab03_pack F:/Lab6/lab03_pack.vhd sub00/vhpl01 1540193395
