@@ -7,11 +7,7 @@
   </head>
   <body>
     <div class="g-signin2" data-onsuccess="onSignIn" data-theme="dark"></div>
-      <div class="col-xs-12 col-sm-12 col-md-8 col-lg-8 col-xl-8">
-                            <form action="index.html" method="post" class="tm-contact-form">                                
-                                <br><iframe src="https://www.google.com/maps/d/u/0/embed?mid=1-xjNyHPtiB-Fesin-x8E2sqd0CuI1ygi" width="750" height="500"></iframe>                       
-                            </form>   
-                        </div>
+
     <script>
       function onSignIn(googleUser) {
         // Useful data for your client-side scripts:
@@ -22,7 +18,6 @@
         console.log('Family Name: ' + profile.getFamilyName());
         console.log("Image URL: " + profile.getImageUrl());
         console.log("Email: " + profile.getEmail());
-
         // The ID token you need to pass to your backend:
         var id_token = googleUser.getAuthResponse().id_token;
         console.log("ID Token: " + id_token);
