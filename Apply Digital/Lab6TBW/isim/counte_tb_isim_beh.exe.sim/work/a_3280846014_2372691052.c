@@ -21,7 +21,7 @@
 #include <malloc.h>
 #define alloca _alloca
 #endif
-static const char *ng0 = "F:/Lab6/counte_tb.vhd";
+static const char *ng0 = "C:/Users/ITreeMan/Documents/198371XML2018-1/Apply Digital/Lab6TBW/counte_tb.vhd";
 
 
 
@@ -161,7 +161,7 @@ LAB9:    goto LAB8;
 LAB11:    goto LAB9;
 
 LAB12:    xsi_set_current_line(89, ng0);
-    t2 = (t0 + 7296);
+    t2 = (t0 + 8340);
     t5 = (t0 + 4832);
     t6 = (t5 + 56U);
     t7 = *((char **)t6);
@@ -222,7 +222,7 @@ LAB21:    goto LAB20;
 LAB23:    goto LAB21;
 
 LAB24:    xsi_set_current_line(96, ng0);
-    t2 = (t0 + 7300);
+    t2 = (t0 + 8344);
     t5 = (t0 + 4832);
     t6 = (t5 + 56U);
     t7 = *((char **)t6);
@@ -283,7 +283,7 @@ LAB33:    goto LAB32;
 LAB35:    goto LAB33;
 
 LAB36:    xsi_set_current_line(103, ng0);
-    t2 = (t0 + 7304);
+    t2 = (t0 + 8348);
     t5 = (t0 + 4832);
     t6 = (t5 + 56U);
     t7 = *((char **)t6);
@@ -344,7 +344,7 @@ LAB45:    goto LAB44;
 LAB47:    goto LAB45;
 
 LAB48:    xsi_set_current_line(110, ng0);
-    t2 = (t0 + 7308);
+    t2 = (t0 + 8352);
     t5 = (t0 + 4832);
     t6 = (t5 + 56U);
     t7 = *((char **)t6);

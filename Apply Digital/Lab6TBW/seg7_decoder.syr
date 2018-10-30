@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.11 secs
+Total CPU time to Xst completion: 0.16 secs
  
 --> Reading design: seg7_decoder.prj
 
@@ -104,27 +104,30 @@ Slice Utilization Ratio Delta      : 5
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "F:/Lab6/lab03_pack.vhd" in Library work.
-Package <lab03_pack> compiled.
-Package body <lab03_pack> compiled.
-Compiling vhdl file "F:/Lab6/seg7_decoder.vhd" in Library work.
+WARNING:HDLParsers:3607 - Unit work/seg7_decoder is now defined in a different file.  It was defined in "F:/Lab6/seg7_decoder.vhd", and is now defined in "C:/Users/ITreeMan/Documents/198371XML2018-1/Apply Digital/Lab6TBW/seg7_decoder.vhd".
+WARNING:HDLParsers:3607 - Unit work/seg7_decoder/Behavioral is now defined in a different file.  It was defined in "F:/Lab6/seg7_decoder.vhd", and is now defined in "C:/Users/ITreeMan/Documents/198371XML2018-1/Apply Digital/Lab6TBW/seg7_decoder.vhd".
+WARNING:HDLParsers:3607 - Unit work/lab03_pack is now defined in a different file.  It was defined in "F:/Lab6/lab03_pack.vhd", and is now defined in "C:/Users/ITreeMan/Documents/198371XML2018-1/Apply Digital/Lab6TBW/lab03_pack.vhd".
+WARNING:HDLParsers:3607 - Unit work/lab03_pack is now defined in a different file.  It was defined in "F:/Lab6/lab03_pack.vhd", and is now defined in "C:/Users/ITreeMan/Documents/198371XML2018-1/Apply Digital/Lab6TBW/lab03_pack.vhd".
+Compiling vhdl file "C:/Users/ITreeMan/Documents/198371XML2018-1/Apply Digital/Lab6TBW/lab03_pack.vhd" in Library work.
+Architecture lab03_pack of Entity lab03_pack is up to date.
+Compiling vhdl file "C:/Users/ITreeMan/Documents/198371XML2018-1/Apply Digital/Lab6TBW/seg7_decoder.vhd" in Library work.
 Entity <seg7_decoder> compiled.
-Entity <seg7_decoder> (Architecture <Behavioral>) compiled.
+Entity <seg7_decoder> (Architecture <behavioral>) compiled.
 
 =========================================================================
 *                     Design Hierarchy Analysis                         *
 =========================================================================
-Analyzing hierarchy for entity <seg7_decoder> in library <work> (architecture <Behavioral>).
+Analyzing hierarchy for entity <seg7_decoder> in library <work> (architecture <behavioral>).
 
 
 =========================================================================
 *                            HDL Analysis                               *
 =========================================================================
-Analyzing Entity <seg7_decoder> in library <work> (Architecture <Behavioral>).
-WARNING:Xst:819 - "F:/Lab6/seg7_decoder.vhd" line 43: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+Analyzing Entity <seg7_decoder> in library <work> (Architecture <behavioral>).
+WARNING:Xst:819 - "C:/Users/ITreeMan/Documents/198371XML2018-1/Apply Digital/Lab6TBW/seg7_decoder.vhd" line 56: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
    <pb5>
-WARNING:Xst:819 - "F:/Lab6/seg7_decoder.vhd" line 40: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <Bin_in>, <pb2>, <pb3>, <pb4>
+WARNING:Xst:819 - "C:/Users/ITreeMan/Documents/198371XML2018-1/Apply Digital/Lab6TBW/seg7_decoder.vhd" line 40: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <Reg_D>, <Bin_in>, <pb2>, <pb3>, <pb4>
 Entity <seg7_decoder> analyzed. Unit <seg7_decoder> generated.
 
 
@@ -135,20 +138,20 @@ Entity <seg7_decoder> analyzed. Unit <seg7_decoder> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <seg7_decoder>.
-    Related source file is "F:/Lab6/seg7_decoder.vhd".
+    Related source file is "C:/Users/ITreeMan/Documents/198371XML2018-1/Apply Digital/Lab6TBW/seg7_decoder.vhd".
     Found 16x8-bit ROM for signal <seg7_temp>.
     Found 4-bit up counter for signal <minute1>.
-    Found 4-bit comparator greatequal for signal <minute1$cmp_ge0000> created at line 55.
-    Found 4-bit comparator less for signal <minute1$cmp_lt0000> created at line 52.
-    Found 4-bit comparator less for signal <minute1$cmp_lt0001> created at line 49.
+    Found 4-bit comparator greatequal for signal <minute1$cmp_ge0000> created at line 68.
+    Found 4-bit comparator less for signal <minute1$cmp_lt0000> created at line 65.
+    Found 4-bit comparator less for signal <minute1$cmp_lt0001> created at line 62.
     Found 4-bit up counter for signal <minute2>.
-    Found 4-bit comparator greatequal for signal <minute2$cmp_ge0000> created at line 58.
-    Found 4-bit comparator less for signal <minute2$cmp_lt0000> created at line 55.
+    Found 4-bit comparator greatequal for signal <minute2$cmp_ge0000> created at line 71.
+    Found 4-bit comparator less for signal <minute2$cmp_lt0000> created at line 68.
     Found 4-bit register for signal <Reg_D>.
     Found 4-bit up counter for signal <second1>.
-    Found 4-bit comparator greatequal for signal <second1$cmp_ge0000> created at line 49.
+    Found 4-bit comparator greatequal for signal <second1$cmp_ge0000> created at line 62.
     Found 4-bit up counter for signal <second2>.
-    Found 4-bit comparator greatequal for signal <second2$cmp_ge0000> created at line 52.
+    Found 4-bit comparator greatequal for signal <second2$cmp_ge0000> created at line 65.
     Found 1-bit register for signal <state>.
     Summary:
 	inferred   1 ROM(s).
@@ -445,14 +448,14 @@ Offset:              9.138ns (Levels of Logic = 2)
 =========================================================================
 
 
-Total REAL time to Xst completion: 6.00 secs
-Total CPU time to Xst completion: 5.76 secs
+Total REAL time to Xst completion: 5.00 secs
+Total CPU time to Xst completion: 5.26 secs
  
 --> 
 
-Total memory usage is 259888 kilobytes
+Total memory usage is 4534856 kilobytes
 
 Number of errors   :    0 (   0 filtered)
-Number of warnings :    2 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
 Number of infos    :    1 (   0 filtered)
 

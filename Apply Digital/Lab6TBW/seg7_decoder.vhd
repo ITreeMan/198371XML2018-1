@@ -39,7 +39,20 @@ architecture Behavioral of seg7_decoder is
 	begin
 	counter : process(clk,state,pb1)
 	begin 
-		
+			case Reg_D is
+			when "0000" => seg7_temp <= zero_seg;
+			when "0001" => seg7_temp <= one_seg;
+			when "0010" => seg7_temp <= two_seg;
+			when "0011" => seg7_temp <= three_seg;
+			when "0100" => seg7_temp <= four_seg;
+			when "0101" => seg7_temp <= five_seg;
+			when "0110" => seg7_temp <= six_seg;
+			when "0111" => seg7_temp <= seven_seg;
+			when "1000" => seg7_temp <= eight_seg;
+			when "1001" => seg7_temp <= nine_seg;
+			when others => seg7_temp <= "11111111";
+			
+		END case;
 		if pb5' event and pb5 = '1' then
 			state <= not state;
 		end if;
@@ -84,20 +97,7 @@ architecture Behavioral of seg7_decoder is
 
 	seg7_decoder : PROCESS(Reg_D,seg7_temp)
 	BEGIN
-		case Reg_D is
-			when "0000" => seg7_temp <= zero_seg;
-			when "0001" => seg7_temp <= one_seg;
-			when "0010" => seg7_temp <= two_seg;
-			when "0011" => seg7_temp <= three_seg;
-			when "0100" => seg7_temp <= four_seg;
-			when "0101" => seg7_temp <= five_seg;
-			when "0110" => seg7_temp <= six_seg;
-			when "0111" => seg7_temp <= seven_seg;
-			when "1000" => seg7_temp <= eight_seg;
-			when "1001" => seg7_temp <= nine_seg;
-			when others => seg7_temp <= "11111111";
-			
-		END case;
+	
 	END PROCESS seg7_decoder;
 	Seg7 <= seg7_temp ;
 	digit1 <= second1 ;

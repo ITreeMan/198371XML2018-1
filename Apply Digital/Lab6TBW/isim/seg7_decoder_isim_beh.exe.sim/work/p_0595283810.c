@@ -27,5 +27,5 @@
 
 extern void work_p_0595283810_init()
 {
-	xsi_register_didat("work_p_0595283810", "isim/counter2tb_isim_beh.exe.sim/work/p_0595283810.didat");
+	xsi_register_didat("work_p_0595283810", "isim/seg7_decoder_isim_beh.exe.sim/work/p_0595283810.didat");
 }

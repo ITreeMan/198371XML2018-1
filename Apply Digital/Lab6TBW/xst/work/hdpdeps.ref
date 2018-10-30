@@ -1,11 +1,18 @@
-V3 6
+V3 8
+FL "C:/Users/ITreeMan/Documents/198371XML2018-1/Apply Digital/Lab6TBW/lab03_pack.vhd" 2018/10/22.14:17:22 P.20131013
+PH work/lab03_pack 1540712334 \
+      FL "C:/Users/ITreeMan/Documents/198371XML2018-1/Apply Digital/Lab6TBW/lab03_pack.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179
+PB work/lab03_pack 1540712335 \
+      FL "C:/Users/ITreeMan/Documents/198371XML2018-1/Apply Digital/Lab6TBW/lab03_pack.vhd" \
+      PH work/lab03_pack 1540712334
+FL "C:/Users/ITreeMan/Documents/198371XML2018-1/Apply Digital/Lab6TBW/seg7_decoder.vhd" 2018/10/28.14:38:26 P.20131013
+EN work/seg7_decoder 1540712336 \
+      FL "C:/Users/ITreeMan/Documents/198371XML2018-1/Apply Digital/Lab6TBW/seg7_decoder.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/STD_LOGIC_UNSIGNED 1381692179 \
+      PB work/lab03_pack 1540712335
+AR work/seg7_decoder/Behavioral 1540712337 \
+      FL "C:/Users/ITreeMan/Documents/198371XML2018-1/Apply Digital/Lab6TBW/seg7_decoder.vhd" \
+      EN work/seg7_decoder 1540712336
 FL F:/Lab6/lab03_pack.vhd 2018/10/22.14:17:22 P.20131013
-PH work/lab03_pack 1540193394 FL F:/Lab6/lab03_pack.vhd PB ieee/std_logic_1164 1381692176 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179
-PB work/lab03_pack 1540193395 \
-      FL F:/Lab6/lab03_pack.vhd PH work/lab03_pack 1540193394
 FL F:/Lab6/seg7_decoder.vhd 2018/10/22.14:24:22 P.20131013
-EN work/seg7_decoder 1540193396 FL F:/Lab6/seg7_decoder.vhd PB ieee/std_logic_1164 1381692176 \
-      PB ieee/STD_LOGIC_UNSIGNED 1381692179 PB work/lab03_pack 1540193395
-AR work/seg7_decoder/Behavioral 1540193397 \
-      FL F:/Lab6/seg7_decoder.vhd EN work/seg7_decoder 1540193396
