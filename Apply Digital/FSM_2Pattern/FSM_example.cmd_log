@@ -1,0 +1,204 @@
+xst -intstyle ise -ifn "D:/FSM_PatternG6S3/FSM_example.xst" -ofn "D:/FSM_PatternG6S3/FSM_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FSM_constrain.ucf -p xc3s200-tq144-4 FSM_example.ngc FSM_example.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o FSM_example_map.ncd FSM_example.ngd FSM_example.pcf 
+par -w -intstyle ise -ol high -t 1 FSM_example_map.ncd FSM_example.ncd FSM_example.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FSM_example.twx FSM_example.ncd -o FSM_example.twr FSM_example.pcf -ucf FSM_constrain.ucf 
+bitgen -intstyle ise -f FSM_example.ut FSM_example.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FSM_constrain.ucf -p xc3s200-tq144-4 FSM_example.ngc FSM_example.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o FSM_example_map.ncd FSM_example.ngd FSM_example.pcf 
+par -w -intstyle ise -ol high -t 1 FSM_example_map.ncd FSM_example.ncd FSM_example.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FSM_example.twx FSM_example.ncd -o FSM_example.twr FSM_example.pcf -ucf FSM_constrain.ucf 
+bitgen -intstyle ise -f FSM_example.ut FSM_example.ncd 
+xst -intstyle ise -ifn "D:/FSM_PatternG6S3/FSM_example.xst" -ofn "D:/FSM_PatternG6S3/FSM_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FSM_constrain.ucf -p xc3s200-tq144-4 FSM_example.ngc FSM_example.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o FSM_example_map.ncd FSM_example.ngd FSM_example.pcf 
+par -w -intstyle ise -ol high -t 1 FSM_example_map.ncd FSM_example.ncd FSM_example.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FSM_example.twx FSM_example.ncd -o FSM_example.twr FSM_example.pcf -ucf FSM_constrain.ucf 
+bitgen -intstyle ise -f FSM_example.ut FSM_example.ncd 
+xst -intstyle ise -ifn "D:/FSM_PatternG6S3/FSM_example.xst" -ofn "D:/FSM_PatternG6S3/FSM_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FSM_constrain.ucf -p xc3s200-tq144-4 FSM_example.ngc FSM_example.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o FSM_example_map.ncd FSM_example.ngd FSM_example.pcf 
+par -w -intstyle ise -ol high -t 1 FSM_example_map.ncd FSM_example.ncd FSM_example.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FSM_constrain.ucf -p xc3s200-tq144-4 FSM_example.ngc FSM_example.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o FSM_example_map.ncd FSM_example.ngd FSM_example.pcf 
+par -w -intstyle ise -ol high -t 1 FSM_example_map.ncd FSM_example.ncd FSM_example.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FSM_example.twx FSM_example.ncd -o FSM_example.twr FSM_example.pcf -ucf FSM_constrain.ucf 
+bitgen -intstyle ise -f FSM_example.ut FSM_example.ncd 
+xst -intstyle ise -ifn "D:/FSM_PatternG6S3/FSM_example.xst" -ofn "D:/FSM_PatternG6S3/FSM_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FSM_constrain.ucf -p xc3s200-tq144-4 FSM_example.ngc FSM_example.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o FSM_example_map.ncd FSM_example.ngd FSM_example.pcf 
+par -w -intstyle ise -ol high -t 1 FSM_example_map.ncd FSM_example.ncd FSM_example.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FSM_example.twx FSM_example.ncd -o FSM_example.twr FSM_example.pcf -ucf FSM_constrain.ucf 
+bitgen -intstyle ise -f FSM_example.ut FSM_example.ncd 
+xst -intstyle ise -ifn "D:/FSM_PatternG6S3/FSM_example.xst" -ofn "D:/FSM_PatternG6S3/FSM_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FSM_constrain.ucf -p xc3s200-tq144-4 FSM_example.ngc FSM_example.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o FSM_example_map.ncd FSM_example.ngd FSM_example.pcf 
+par -w -intstyle ise -ol high -t 1 FSM_example_map.ncd FSM_example.ncd FSM_example.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FSM_example.twx FSM_example.ncd -o FSM_example.twr FSM_example.pcf -ucf FSM_constrain.ucf 
+bitgen -intstyle ise -f FSM_example.ut FSM_example.ncd 
+xst -intstyle ise -ifn "D:/FSM_PatternG6S3/FSM_example.xst" -ofn "D:/FSM_PatternG6S3/FSM_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FSM_constrain.ucf -p xc3s200-tq144-4 FSM_example.ngc FSM_example.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o FSM_example_map.ncd FSM_example.ngd FSM_example.pcf 
+par -w -intstyle ise -ol high -t 1 FSM_example_map.ncd FSM_example.ncd FSM_example.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FSM_example.twx FSM_example.ncd -o FSM_example.twr FSM_example.pcf -ucf FSM_constrain.ucf 
+bitgen -intstyle ise -f FSM_example.ut FSM_example.ncd 
+xst -intstyle ise -ifn "D:/FSM_PatternG6S3/FSM_example.xst" -ofn "D:/FSM_PatternG6S3/FSM_example.syr" 
+xst -intstyle ise -ifn "D:/FSM_PatternG6S3/FSM_example.xst" -ofn "D:/FSM_PatternG6S3/FSM_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FSM_constrain.ucf -p xc3s200-tq144-4 FSM_example.ngc FSM_example.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o FSM_example_map.ncd FSM_example.ngd FSM_example.pcf 
+par -w -intstyle ise -ol high -t 1 FSM_example_map.ncd FSM_example.ncd FSM_example.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FSM_example.twx FSM_example.ncd -o FSM_example.twr FSM_example.pcf -ucf FSM_constrain.ucf 
+bitgen -intstyle ise -f FSM_example.ut FSM_example.ncd 
+xst -intstyle ise -ifn "D:/FSM_PatternG6S3/FSM_example.xst" -ofn "D:/FSM_PatternG6S3/FSM_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FSM_constrain.ucf -p xc3s200-tq144-4 FSM_example.ngc FSM_example.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o FSM_example_map.ncd FSM_example.ngd FSM_example.pcf 
+par -w -intstyle ise -ol high -t 1 FSM_example_map.ncd FSM_example.ncd FSM_example.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FSM_example.twx FSM_example.ncd -o FSM_example.twr FSM_example.pcf -ucf FSM_constrain.ucf 
+bitgen -intstyle ise -f FSM_example.ut FSM_example.ncd 
+xst -intstyle ise -ifn "D:/FSM_PatternG6S3/FSM_example.xst" -ofn "D:/FSM_PatternG6S3/FSM_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FSM_constrain.ucf -p xc3s200-tq144-4 FSM_example.ngc FSM_example.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o FSM_example_map.ncd FSM_example.ngd FSM_example.pcf 
+par -w -intstyle ise -ol high -t 1 FSM_example_map.ncd FSM_example.ncd FSM_example.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FSM_example.twx FSM_example.ncd -o FSM_example.twr FSM_example.pcf -ucf FSM_constrain.ucf 
+bitgen -intstyle ise -f FSM_example.ut FSM_example.ncd 
+xst -intstyle ise -ifn "D:/FSM_PatternG6S3/FSM_example.xst" -ofn "D:/FSM_PatternG6S3/FSM_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FSM_constrain.ucf -p xc3s200-tq144-4 FSM_example.ngc FSM_example.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o FSM_example_map.ncd FSM_example.ngd FSM_example.pcf 
+par -w -intstyle ise -ol high -t 1 FSM_example_map.ncd FSM_example.ncd FSM_example.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FSM_example.twx FSM_example.ncd -o FSM_example.twr FSM_example.pcf -ucf FSM_constrain.ucf 
+bitgen -intstyle ise -f FSM_example.ut FSM_example.ncd 
+xst -intstyle ise -ifn "D:/FSM_PatternG6S3/FSM_example.xst" -ofn "D:/FSM_PatternG6S3/FSM_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FSM_constrain.ucf -p xc3s200-tq144-4 FSM_example.ngc FSM_example.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o FSM_example_map.ncd FSM_example.ngd FSM_example.pcf 
+par -w -intstyle ise -ol high -t 1 FSM_example_map.ncd FSM_example.ncd FSM_example.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FSM_example.twx FSM_example.ncd -o FSM_example.twr FSM_example.pcf -ucf FSM_constrain.ucf 
+bitgen -intstyle ise -f FSM_example.ut FSM_example.ncd 
+xst -intstyle ise -ifn "D:/FSM_PatternG6S3/FSM_example.xst" -ofn "D:/FSM_PatternG6S3/FSM_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-tq144-4 FSM_example.ngc FSM_example.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o FSM_example_map.ncd FSM_example.ngd FSM_example.pcf 
+par -w -intstyle ise -ol high -t 1 FSM_example_map.ncd FSM_example.ncd FSM_example.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FSM_example.twx FSM_example.ncd -o FSM_example.twr FSM_example.pcf 
+bitgen -intstyle ise -f FSM_example.ut FSM_example.ncd 
+xst -intstyle ise -ifn "D:/FSM_PatternG6S3/FSM_example.xst" -ofn "D:/FSM_PatternG6S3/FSM_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s200-tq144-4 FSM_example.ngc FSM_example.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o FSM_example_map.ncd FSM_example.ngd FSM_example.pcf 
+par -w -intstyle ise -ol high -t 1 FSM_example_map.ncd FSM_example.ncd FSM_example.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FSM_example.twx FSM_example.ncd -o FSM_example.twr FSM_example.pcf 
+bitgen -intstyle ise -f FSM_example.ut FSM_example.ncd 
+xst -intstyle ise -ifn "D:/FSM_PatternG6S3/FSM_example.xst" -ofn "D:/FSM_PatternG6S3/FSM_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FSM_constrain.ucf -p xc3s200-tq144-4 FSM_example.ngc FSM_example.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o FSM_example_map.ncd FSM_example.ngd FSM_example.pcf 
+par -w -intstyle ise -ol high -t 1 FSM_example_map.ncd FSM_example.ncd FSM_example.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FSM_constrain.ucf -p xc3s200-tq144-4 FSM_example.ngc FSM_example.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o FSM_example_map.ncd FSM_example.ngd FSM_example.pcf 
+par -w -intstyle ise -ol high -t 1 FSM_example_map.ncd FSM_example.ncd FSM_example.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FSM_example.twx FSM_example.ncd -o FSM_example.twr FSM_example.pcf -ucf FSM_constrain.ucf 
+bitgen -intstyle ise -f FSM_example.ut FSM_example.ncd 
+xst -intstyle ise -ifn "D:/FSM_PatternG6S3/FSM_example.xst" -ofn "D:/FSM_PatternG6S3/FSM_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FSM_constrain.ucf -p xc3s200-tq144-4 FSM_example.ngc FSM_example.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o FSM_example_map.ncd FSM_example.ngd FSM_example.pcf 
+par -w -intstyle ise -ol high -t 1 FSM_example_map.ncd FSM_example.ncd FSM_example.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FSM_example.twx FSM_example.ncd -o FSM_example.twr FSM_example.pcf -ucf FSM_constrain.ucf 
+bitgen -intstyle ise -f FSM_example.ut FSM_example.ncd 
+xst -intstyle ise -ifn "D:/FSM_PatternG6S3/FSM_example.xst" -ofn "D:/FSM_PatternG6S3/FSM_example.syr" 
+xst -intstyle ise -ifn "D:/FSM_PatternG6S3/FSM_example.xst" -ofn "D:/FSM_PatternG6S3/FSM_example.syr" 
+xst -intstyle ise -ifn "D:/FSM_PatternG6S3/FSM_example.xst" -ofn "D:/FSM_PatternG6S3/FSM_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FSM_constrain.ucf -p xc3s200-tq144-4 FSM_example.ngc FSM_example.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o FSM_example_map.ncd FSM_example.ngd FSM_example.pcf 
+par -w -intstyle ise -ol high -t 1 FSM_example_map.ncd FSM_example.ncd FSM_example.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FSM_example.twx FSM_example.ncd -o FSM_example.twr FSM_example.pcf -ucf FSM_constrain.ucf 
+bitgen -intstyle ise -f FSM_example.ut FSM_example.ncd 
+xst -intstyle ise -ifn "D:/FSM_PatternG6S3/FSM_example.xst" -ofn "D:/FSM_PatternG6S3/FSM_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FSM_constrain.ucf -p xc3s200-tq144-4 FSM_example.ngc FSM_example.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o FSM_example_map.ncd FSM_example.ngd FSM_example.pcf 
+par -w -intstyle ise -ol high -t 1 FSM_example_map.ncd FSM_example.ncd FSM_example.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FSM_example.twx FSM_example.ncd -o FSM_example.twr FSM_example.pcf -ucf FSM_constrain.ucf 
+bitgen -intstyle ise -f FSM_example.ut FSM_example.ncd 
+xst -intstyle ise -ifn "D:/FSM_PatternG6S3/FSM_example.xst" -ofn "D:/FSM_PatternG6S3/FSM_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FSM_constrain.ucf -p xc3s200-tq144-4 FSM_example.ngc FSM_example.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o FSM_example_map.ncd FSM_example.ngd FSM_example.pcf 
+par -w -intstyle ise -ol high -t 1 FSM_example_map.ncd FSM_example.ncd FSM_example.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FSM_example.twx FSM_example.ncd -o FSM_example.twr FSM_example.pcf -ucf FSM_constrain.ucf 
+bitgen -intstyle ise -f FSM_example.ut FSM_example.ncd 
+xst -intstyle ise -ifn "D:/FSM_PatternG6S3/FSM_example.xst" -ofn "D:/FSM_PatternG6S3/FSM_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FSM_constrain.ucf -p xc3s200-tq144-4 FSM_example.ngc FSM_example.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o FSM_example_map.ncd FSM_example.ngd FSM_example.pcf 
+par -w -intstyle ise -ol high -t 1 FSM_example_map.ncd FSM_example.ncd FSM_example.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FSM_example.twx FSM_example.ncd -o FSM_example.twr FSM_example.pcf -ucf FSM_constrain.ucf 
+bitgen -intstyle ise -f FSM_example.ut FSM_example.ncd 
+xst -intstyle ise -ifn "D:/FSM_PatternG6S3/FSM_example.xst" -ofn "D:/FSM_PatternG6S3/FSM_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FSM_constrain.ucf -p xc3s200-tq144-4 FSM_example.ngc FSM_example.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o FSM_example_map.ncd FSM_example.ngd FSM_example.pcf 
+par -w -intstyle ise -ol high -t 1 FSM_example_map.ncd FSM_example.ncd FSM_example.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FSM_example.twx FSM_example.ncd -o FSM_example.twr FSM_example.pcf -ucf FSM_constrain.ucf 
+bitgen -intstyle ise -f FSM_example.ut FSM_example.ncd 
+xst -intstyle ise -ifn "D:/FSM_PatternG6S3/FSM_example.xst" -ofn "D:/FSM_PatternG6S3/FSM_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FSM_constrain.ucf -p xc3s200-tq144-4 FSM_example.ngc FSM_example.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o FSM_example_map.ncd FSM_example.ngd FSM_example.pcf 
+par -w -intstyle ise -ol high -t 1 FSM_example_map.ncd FSM_example.ncd FSM_example.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FSM_example.twx FSM_example.ncd -o FSM_example.twr FSM_example.pcf -ucf FSM_constrain.ucf 
+bitgen -intstyle ise -f FSM_example.ut FSM_example.ncd 
+xst -intstyle ise -ifn "D:/FSM_PatternG6S3/FSM_example.xst" -ofn "D:/FSM_PatternG6S3/FSM_example.syr" 
+xst -intstyle ise -ifn "D:/FSM_PatternG6S3/FSM_example.xst" -ofn "D:/FSM_PatternG6S3/FSM_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FSM_constrain.ucf -p xc3s200-tq144-4 FSM_example.ngc FSM_example.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o FSM_example_map.ncd FSM_example.ngd FSM_example.pcf 
+par -w -intstyle ise -ol high -t 1 FSM_example_map.ncd FSM_example.ncd FSM_example.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FSM_example.twx FSM_example.ncd -o FSM_example.twr FSM_example.pcf -ucf FSM_constrain.ucf 
+bitgen -intstyle ise -f FSM_example.ut FSM_example.ncd 
+xst -intstyle ise -ifn "D:/FSM_PatternG6S3/FSM_example.xst" -ofn "D:/FSM_PatternG6S3/FSM_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FSM_constrain.ucf -p xc3s200-tq144-4 FSM_example.ngc FSM_example.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o FSM_example_map.ncd FSM_example.ngd FSM_example.pcf 
+par -w -intstyle ise -ol high -t 1 FSM_example_map.ncd FSM_example.ncd FSM_example.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FSM_example.twx FSM_example.ncd -o FSM_example.twr FSM_example.pcf -ucf FSM_constrain.ucf 
+bitgen -intstyle ise -f FSM_example.ut FSM_example.ncd 
+xst -intstyle ise -ifn "D:/FSM_PatternG6S3/FSM_example.xst" -ofn "D:/FSM_PatternG6S3/FSM_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FSM_constrain.ucf -p xc3s200-tq144-4 FSM_example.ngc FSM_example.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o FSM_example_map.ncd FSM_example.ngd FSM_example.pcf 
+par -w -intstyle ise -ol high -t 1 FSM_example_map.ncd FSM_example.ncd FSM_example.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FSM_example.twx FSM_example.ncd -o FSM_example.twr FSM_example.pcf -ucf FSM_constrain.ucf 
+bitgen -intstyle ise -f FSM_example.ut FSM_example.ncd 
+xst -intstyle ise -ifn "D:/FSM_PatternG6S3/FSM_example.xst" -ofn "D:/FSM_PatternG6S3/FSM_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FSM_constrain.ucf -p xc3s200-tq144-4 FSM_example.ngc FSM_example.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o FSM_example_map.ncd FSM_example.ngd FSM_example.pcf 
+par -w -intstyle ise -ol high -t 1 FSM_example_map.ncd FSM_example.ncd FSM_example.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FSM_example.twx FSM_example.ncd -o FSM_example.twr FSM_example.pcf -ucf FSM_constrain.ucf 
+bitgen -intstyle ise -f FSM_example.ut FSM_example.ncd 
+xst -intstyle ise -ifn "E:/LAB8/FSM_PatternG6S3/FSM_example.xst" -ofn "E:/LAB8/FSM_PatternG6S3/FSM_example.syr" 
+xst -intstyle ise -ifn "E:/LAB8/FSM_PatternG6S3/FSM_example.xst" -ofn "E:/LAB8/FSM_PatternG6S3/FSM_example.syr" 
+xst -intstyle ise -ifn "E:/LAB8/FSM_PatternG6S3/FSM_example.xst" -ofn "E:/LAB8/FSM_PatternG6S3/FSM_example.syr" 
+xst -intstyle ise -ifn "F:/FSM_2Pattern/FSM_example.xst" -ofn "F:/FSM_2Pattern/FSM_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FSM_constrain.ucf -p xc3s200-tq144-4 FSM_example.ngc FSM_example.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o FSM_example_map.ncd FSM_example.ngd FSM_example.pcf 
+par -w -intstyle ise -ol high -t 1 FSM_example_map.ncd FSM_example.ncd FSM_example.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FSM_example.twx FSM_example.ncd -o FSM_example.twr FSM_example.pcf -ucf FSM_constrain.ucf 
+bitgen -intstyle ise -f FSM_example.ut FSM_example.ncd 
+xst -intstyle ise -ifn "F:/FSM_2Pattern/FSM_example.xst" -ofn "F:/FSM_2Pattern/FSM_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FSM_constrain.ucf -p xc3s200-tq144-4 FSM_example.ngc FSM_example.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o FSM_example_map.ncd FSM_example.ngd FSM_example.pcf 
+par -w -intstyle ise -ol high -t 1 FSM_example_map.ncd FSM_example.ncd FSM_example.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FSM_example.twx FSM_example.ncd -o FSM_example.twr FSM_example.pcf -ucf FSM_constrain.ucf 
+bitgen -intstyle ise -f FSM_example.ut FSM_example.ncd 
+xst -intstyle ise -ifn "F:/FSM_2Pattern/FSM_example.xst" -ofn "F:/FSM_2Pattern/FSM_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FSM_constrain.ucf -p xc3s200-tq144-4 FSM_example.ngc FSM_example.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o FSM_example_map.ncd FSM_example.ngd FSM_example.pcf 
+par -w -intstyle ise -ol high -t 1 FSM_example_map.ncd FSM_example.ncd FSM_example.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FSM_example.twx FSM_example.ncd -o FSM_example.twr FSM_example.pcf -ucf FSM_constrain.ucf 
+bitgen -intstyle ise -f FSM_example.ut FSM_example.ncd 
+xst -intstyle ise -ifn "C:/Users/Labcom11/Desktop/FSM_2Pattern/FSM_example.xst" -ofn "C:/Users/Labcom11/Desktop/FSM_2Pattern/FSM_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FSM_constrain.ucf -p xc3s200-tq144-4 FSM_example.ngc FSM_example.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o FSM_example_map.ncd FSM_example.ngd FSM_example.pcf 
+par -w -intstyle ise -ol high -t 1 FSM_example_map.ncd FSM_example.ncd FSM_example.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FSM_example.twx FSM_example.ncd -o FSM_example.twr FSM_example.pcf -ucf FSM_constrain.ucf 
+bitgen -intstyle ise -f FSM_example.ut FSM_example.ncd 
+xst -intstyle ise -ifn "C:/Users/Labcom11/Desktop/FSM_2Pattern/FSM_example.xst" -ofn "C:/Users/Labcom11/Desktop/FSM_2Pattern/FSM_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FSM_constrain.ucf -p xc3s200-tq144-4 FSM_example.ngc FSM_example.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o FSM_example_map.ncd FSM_example.ngd FSM_example.pcf 
+par -w -intstyle ise -ol high -t 1 FSM_example_map.ncd FSM_example.ncd FSM_example.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FSM_example.twx FSM_example.ncd -o FSM_example.twr FSM_example.pcf -ucf FSM_constrain.ucf 
+bitgen -intstyle ise -f FSM_example.ut FSM_example.ncd 
+xst -intstyle ise -ifn "C:/Users/Labcom11/Desktop/FSM_2Pattern/FSM_example.xst" -ofn "C:/Users/Labcom11/Desktop/FSM_2Pattern/FSM_example.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc FSM_constrain.ucf -p xc3s200-tq144-4 FSM_example.ngc FSM_example.ngd  
+map -intstyle ise -p xc3s200-tq144-4 -cm area -ir off -pr off -c 100 -o FSM_example_map.ncd FSM_example.ngd FSM_example.pcf 
+par -w -intstyle ise -ol high -t 1 FSM_example_map.ncd FSM_example.ncd FSM_example.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml FSM_example.twx FSM_example.ncd -o FSM_example.twr FSM_example.pcf -ucf FSM_constrain.ucf 
+bitgen -intstyle ise -f FSM_example.ut FSM_example.ncd 

@@ -1,0 +1,26 @@
+NET "Seg7<0>" LOC = "p20";
+NET "Seg7<1>" LOC = "p23";
+NET "Seg7<2>" LOC = "p25";
+NET "Seg7<3>" LOC = "p27";
+NET "Seg7<4>" LOC = "p30";
+NET "Seg7<5>" LOC = "p32";
+NET "Seg7<6>" LOC = "p35";
+NET "Seg7<7>" LOC = "p40";
+
+NET "Bin_in<0>" LOC = "p56" ;
+NET "Bin_in<1>" LOC = "p55" ;
+NET "Bin_in<2>" LOC = "p53" ;
+NET "Bin_in<3>" LOC = "p52" ;
+
+NET "digit<0>" LOC = "p31";
+NET "digit<1>" LOC = "p33";
+NET "digit<2>" LOC = "p36";
+NET "digit<3>" LOC = "p41";
+
+NET "clk" LOC = "p127";
+NET "pb1" LOC = "p44";
+NET "pb2" LOC = "p46";
+NET "pb3" LOC = "p47";
+NET "pb4" LOC = "p50"; 
+NET "pb5" LOC = "p51"; 
+NET "pb5" CLOCK_DEDICATED_ROUTE = FALSE;

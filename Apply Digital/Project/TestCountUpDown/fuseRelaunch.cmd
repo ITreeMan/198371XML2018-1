@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/ITreeMan/Desktop/Lab7/light_3pattern/light_pattern_tbw_isim_beh.exe" -prj "C:/Users/ITreeMan/Desktop/Lab7/light_3pattern/light_pattern_tbw_beh.prj" "work.light_pattern_tbw" 

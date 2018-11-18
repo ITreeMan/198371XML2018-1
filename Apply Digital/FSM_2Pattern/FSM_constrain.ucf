@@ -1,0 +1,18 @@
+NET "clk" LOC = "P127";
+
+NET "seg7_disp<0>" LOC = "P20";
+NET "seg7_disp<1>" LOC = "P23";
+NET "seg7_disp<2>" LOC = "P25";
+NET "seg7_disp<3>" LOC = "P27";
+NET "seg7_disp<4>" LOC = "P30";
+NET "seg7_disp<5>" LOC = "P32";
+NET "seg7_disp<6>" LOC = "P35";
+NET "seg7_disp<7>" LOC = "P40";
+
+NET "seg_led<0>" LOC = "P31" ;
+NET "seg_led<1>" LOC = "P33" ;
+NET "seg_led<2>" LOC = "P36" ;
+NET "seg_led<3>" LOC = "P41" ;
+
+NET "PB5" LOC = "P51";
+NET "PB5" CLOCK_DEDICATED_ROUTE = FALSE;

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=C:\Users\Labcom11\Desktop\FSM_2Pattern\FSM_example.ncd
+OUTFILE=C:\Users\Labcom11\Desktop\FSM_2Pattern\FSM_example.bit
+FAMILY=Spartan3
+PART=xc3s200-4tq144
+WORKINGDIR=C:\Users\Labcom11\Desktop\FSM_2Pattern
+LICENSE=WebPack
+USER_INFO=208478922_0_0_054

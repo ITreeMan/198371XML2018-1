@@ -1,0 +1,25 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon Oct 29 15:02:44 2018
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "PB5" LOCATE = SITE "P51" LEVEL 1;
+PIN PB5_pin<0> = BEL "PB5" PINNAME PAD;
+PIN "PB5_pin<0>" CLOCK_DEDICATED_ROUTE = FALSE;
+COMP "clk" LOCATE = SITE "P127" LEVEL 1;
+COMP "seg7_disp<0>" LOCATE = SITE "P20" LEVEL 1;
+COMP "seg7_disp<1>" LOCATE = SITE "P23" LEVEL 1;
+COMP "seg7_disp<2>" LOCATE = SITE "P25" LEVEL 1;
+COMP "seg7_disp<3>" LOCATE = SITE "P27" LEVEL 1;
+COMP "seg7_disp<4>" LOCATE = SITE "P30" LEVEL 1;
+COMP "seg7_disp<5>" LOCATE = SITE "P32" LEVEL 1;
+COMP "seg7_disp<6>" LOCATE = SITE "P35" LEVEL 1;
+COMP "seg7_disp<7>" LOCATE = SITE "P40" LEVEL 1;
+COMP "seg_led<0>" LOCATE = SITE "P31" LEVEL 1;
+COMP "seg_led<1>" LOCATE = SITE "P33" LEVEL 1;
+COMP "seg_led<2>" LOCATE = SITE "P36" LEVEL 1;
+COMP "seg_led<3>" LOCATE = SITE "P41" LEVEL 1;
+NET "PB5_BUFGP/IBUFG" BEL "PB5_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+NET "clk_BUFGP/IBUFG" BEL "clk_BUFGP/BUFG.GCLKMUX" USELOCALCONNECT;
+SCHEMATIC END;
+

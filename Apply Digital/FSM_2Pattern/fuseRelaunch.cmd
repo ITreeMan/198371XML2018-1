@@ -1,0 +1,1 @@
+-intstyle "ise" -incremental -o "C:/Users/ITreeMan/Documents/198371XML2018-1/Apply Digital/FSM_2Pattern/FSM_2patt_tb_isim_beh.exe" -prj "C:/Users/ITreeMan/Documents/198371XML2018-1/Apply Digital/FSM_2Pattern/FSM_2patt_tb_beh.prj" "work.FSM_2patt_tb" 
