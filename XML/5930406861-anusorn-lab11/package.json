@@ -1,0 +1,16 @@
+{
+  "name": "5930406861-anusorn-lab11",
+  "version": "1.0.0",
+  "description": "",
+  "main": "ex_readfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.16.4",
+    "jsonfile": "^5.0.0",
+    "require": "^2.4.20"
+  }
+}
