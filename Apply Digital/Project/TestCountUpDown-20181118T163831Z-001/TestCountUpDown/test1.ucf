@@ -1,0 +1,15 @@
+NET "clk" LOC = "P127";
+
+NET "seg7_disp<0>" LOC = "P20";
+NET "seg7_disp<1>" LOC = "P23";
+NET "seg7_disp<2>" LOC = "P25";
+NET "seg7_disp<3>" LOC = "P27";
+NET "seg7_disp<4>" LOC = "P30";
+NET "seg7_disp<5>" LOC = "P32";
+NET "seg7_disp<6>" LOC = "P35";
+NET "seg7_disp<7>" LOC = "P40";
+
+NET "led_disp" LOC = "P31" ;
+
+NET "pb5" LOC = "P51";
+NET "pb5" CLOCK_DEDICATED_ROUTE = FALSE;

@@ -1,0 +1,9 @@
+V3 4
+FL C:/Users/ITreeMan/Desktop/Lab7/light_3pattern/light_pattern.vhd 2018/11/11.23:51:34 P.20131013
+FL C:/Users/Labcom8/Desktop/TestCountUpDown/light_pattern.vhd 2018/11/12.16:51:49 P.20131013
+EN work/light_pattern 1542016314 \
+      FL C:/Users/Labcom8/Desktop/TestCountUpDown/light_pattern.vhd \
+      PB ieee/std_logic_1164 1381692176
+AR work/light_pattern/Behavioral 1542016315 \
+      FL C:/Users/Labcom8/Desktop/TestCountUpDown/light_pattern.vhd \
+      EN work/light_pattern 1542016314
