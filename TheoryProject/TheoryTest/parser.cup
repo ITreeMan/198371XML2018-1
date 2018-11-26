@@ -1,0 +1,120 @@
+/*
+   Simple +/-/* expression language; 
+   parser evaluates constant expressions on the fly
+*/
+
+package cup.example;
+
+import java_cup.runtime.*;
+import cup.example.Lexer;
+import java.io.IOException;
+import java.io.File;
+import java.io.FileInputStream;
+
+parser code {:
+  protected Lexer lexer;
+:}
+
+/* define how to connect to the scanner! */
+init with {:
+  ComplexSymbolFactory f = new ComplexSymbolFactory();
+  symbolFactory = f;
+  File file = new File("input.txt");
+  FileInputStream fis = null;
+  try {
+    fis = new FileInputStream(file);
+  } catch (IOException e) {
+    e.printStackTrace();
+  } 
+  lexer = new Lexer(f,fis);
+:};
+scan with {: return lexer.next_token(); :};
+
+/* Terminals (tokens returned by the scanner). */
+terminal            SEMI, PLUS, MINUS, UMINUS, TIMES, LPAREN, RPAREN,BLACKONE,BLACKTWO,BLACKTHREE;
+terminal  BROWNONE, BROWNTWO, BROWNTHREE, REDONE, REDTWO, REDTHREE,ORANGEONE,ORANGETWO,ORANGETHREE, YELLOWONE, YELLOWTWO, YELLOWTHREE, GREENONE, GREENTWO, GREENTHREE, BLUEONE, BLUETWO, BLUETHREE, PURPLEONE, PURPLETWO, PURPLETHREE, GRAYONE, GRAYTWO, WHITEONE, WHITETWO, SILVERTHREE, SILVERFOUR, GOLDENTHREE,GOLDENFOUR;
+terminal Integer    NUMBER;        // our scanner provides numbers as integers
+
+/* Non terminals */
+non terminal            expr_list;
+non terminal Integer    expr;      // used to store evaluated subexpressions
+
+/* Precedences */
+precedence left PLUS, MINUS;
+precedence left TIMES,BLACKONE,BLACKTWO,BLACKTHREE;
+precedence left BROWNONE, BROWNTWO, BROWNTHREE, REDONE, REDTWO, REDTHREE,ORANGEONE,ORANGETWO,ORANGETHREE, YELLOWONE, YELLOWTWO, YELLOWTHREE, GREENONE, GREENTWO, GREENTHREE, BLUEONE, BLUETWO, BLUETHREE, PURPLEONE, PURPLETWO, PURPLETHREE, GRAYONE, GRAYTWO, WHITEONE, WHITETWO, SILVERTHREE, SILVERFOUR, GOLDENTHREE,GOLDENFOUR;
+precedence left UMINUS;
+
+/* The grammar rules */
+expr_list ::= expr_list expr:e SEMI         {:  if (e == 101) System.out.print("*0.01"); 
+												else if (e == 102) System.out.print("*0.1"); 
+												else if (e == 103) System.out.print("*1"); 
+												else if (e == 104) System.out.print("*10"); 
+												else if (e == 105) System.out.print("*100"); 
+												else if (e == 106) System.out.print("*1k"); 
+												else if (e == 107) System.out.print("*10k"); 
+												else if (e == 108) System.out.print("*100k"); 
+												else if (e == 109) System.out.print("*1M"); 
+												else if (e == 110) System.out.print("*10M"); 
+												else if (e == 1000) System.out.print("+-10%"); 
+												else if (e == 1500) System.out.print("+-5%"); 
+												else System.out.print(e); :}
+            | expr:e SEMI                   {: if (e == 100 ) System.out.print("*1"); 
+												else System.out.print(e); :}
+            ;
+            
+expr      ::= expr:e1 PLUS  expr:e2         {: RESULT = e1+e2;        :}
+             | expr:e1 MINUS expr:e2        {: RESULT = e1-e2;        :}
+             | expr:e1 TIMES expr:e2        {: RESULT = e1*e2;        :}
+             
+             | BLACKONE   			{: RESULT = 0;        :}
+             | BLACKTWO   			{: RESULT = 0;        :}
+             | BLACKTHREE   			{: RESULT = 103;        :}
+             
+             | BROWNONE   			{: RESULT = 1;        :}
+             | BROWNTWO   			{: RESULT = 1;        :}
+             | BROWNTHREE   			{: RESULT = 104;        :}
+             
+             | REDONE   			{: RESULT = 2;        :}
+             | REDTWO   			{: RESULT = 2;        :}
+             | REDTHREE   			{: RESULT = 105;        :}
+             
+             | ORANGEONE   			{: RESULT = 3;        :}
+             | ORANGETWO   			{: RESULT = 3;        :}
+             | ORANGETHREE   			{: RESULT = 106;        :}
+             
+             
+             | YELLOWONE   			{: RESULT = 4;        :}
+             | YELLOWTWO  			{: RESULT = 4;        :}
+             | YELLOWTHREE   			{: RESULT = 107;        :}
+             
+             | GREENONE   			{: RESULT = 5;        :}
+             | GREENTWO  			{: RESULT = 5;        :}
+             | GREENTHREE   			{: RESULT = 108;        :}
+             
+             | BLUEONE   			{: RESULT = 6;        :}
+             | BLUETWO  			{: RESULT = 6;        :}
+             | BLUETHREE   			{: RESULT = 109;        :}
+
+             | PURPLEONE   			{: RESULT = 7;        :}
+             | PURPLETWO  			{: RESULT = 7;        :}
+             | PURPLETHREE   			{: RESULT = 110;        :}
+             
+             | GRAYONE   			{: RESULT = 8;        :}
+             | GRAYTWO  			{: RESULT = 8;        :}
+             
+             | WHITEONE   			{: RESULT = 9;        :}
+             | WHITETWO  			{: RESULT = 9;        :}
+
+             | SILVERTHREE   			{: RESULT = 101;        :}
+             | SILVERFOUR  			{: RESULT = 1000;        :}
+             
+             | GOLDENTHREE   			{: RESULT = 102;        :}
+             | GOLDENFOUR  			{: RESULT = 1500;        :}
+             
+             | MINUS expr:e                 {: RESULT = -e;           :}
+             %prec UMINUS
+             | LPAREN expr:e RPAREN	         {: RESULT = e;           :}
+             | NUMBER:n	                     {: RESULT = n;           :}
+             ;
+       
