@@ -1,4 +1,9 @@
 BROWN[1];
-WHITE[1];
+WHITE[2];
 YELLOW[3];
 GOLDEN[4];
+
+RED[1];
+RED[2];
+YELLOW[3];
+SILVER[4];

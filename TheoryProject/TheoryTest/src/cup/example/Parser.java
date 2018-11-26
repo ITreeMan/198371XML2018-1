@@ -286,8 +286,8 @@ class CUP$Parser$actions {
 												else if (e == 108) System.out.print("*100k"); 
 												else if (e == 109) System.out.print("*1M"); 
 												else if (e == 110) System.out.print("*10M"); 
-												else if (e == 1000) System.out.print("+-10%"); 
-												else if (e == 1500) System.out.print("+-5%"); 
+												else if (e == 1000) System.out.println("+-10%"); 
+												else if (e == 1500) System.out.println("+-5%"); 
 												else System.out.print(e); 
               CUP$Parser$result = parser.getSymbolFactory().newSymbol("expr_list",0, ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-2)), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
             }
@@ -315,7 +315,18 @@ class CUP$Parser$actions {
 		Location exright = ((java_cup.runtime.ComplexSymbolFactory.ComplexSymbol)CUP$Parser$stack.elementAt(CUP$Parser$top-1)).xright;
 		Integer e = (Integer)((java_cup.runtime.Symbol) CUP$Parser$stack.elementAt(CUP$Parser$top-1)).value;
 		//@@CUPDBG4
- if (e == 100 ) System.out.print("*1"); 
+  if (e == 101) System.out.print("*0.01"); 
+												else if (e == 102) System.out.print("*0.1"); 
+												else if (e == 103) System.out.print("*1"); 
+												else if (e == 104) System.out.print("*10"); 
+												else if (e == 105) System.out.print("*100"); 
+												else if (e == 106) System.out.print("*1k"); 
+												else if (e == 107) System.out.print("*10k"); 
+												else if (e == 108) System.out.print("*100k"); 
+												else if (e == 109) System.out.print("*1M"); 
+												else if (e == 110) System.out.print("*10M"); 
+												else if (e == 1000) System.out.println("± 10%"); 
+												else if (e == 1500) System.out.println("± 5%"); 
 												else System.out.print(e); 
               CUP$Parser$result = parser.getSymbolFactory().newSymbol("expr_list",0, ((java_cup.runtime.Symbol)CUP$Parser$stack.elementAt(CUP$Parser$top-1)), ((java_cup.runtime.Symbol)CUP$Parser$stack.peek()), RESULT);
             }
