@@ -85,6 +85,9 @@ ident = ([:jletter:] | "_" ) ([:jletterdigit:] | [:jletter:] | "_" )*
   "n"          { return symbolFactory.newSymbol("UMINUS", UMINUS); }
   "("          { return symbolFactory.newSymbol("LPAREN", LPAREN); }
   ")"          { return symbolFactory.newSymbol("RPAREN", RPAREN); }
+  "/"          { return symbolFactory.newSymbol("DIVIDE", DIVIDE); }
+  "sqrt"       { return symbolFactory.newSymbol("SQRT", SQRT); }
+  "=?"       	{ return symbolFactory.newSymbol("EQUAL", EQUAL); }
   
   
   "BLACK[1]"   { return symbolFactory.newSymbol("BLACKONE", BLACKONE); }

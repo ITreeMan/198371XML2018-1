@@ -10,6 +10,8 @@ import cup.example.Lexer;
 import java.io.IOException;
 import java.io.File;
 import java.io.FileInputStream;
+import java.lang.*;
+import java.util.Random;
 
 parser code {:
   protected Lexer lexer;
@@ -31,8 +33,8 @@ init with {:
 scan with {: return lexer.next_token(); :};
 
 /* Terminals (tokens returned by the scanner). */
-terminal            SEMI, PLUS, MINUS, UMINUS, TIMES, LPAREN, RPAREN,BLACKONE,BLACKTWO,BLACKTHREE;
-terminal  BROWNONE, BROWNTWO, BROWNTHREE, REDONE, REDTWO, REDTHREE,ORANGEONE,ORANGETWO,ORANGETHREE, YELLOWONE, YELLOWTWO, YELLOWTHREE, GREENONE, GREENTWO, GREENTHREE, BLUEONE, BLUETWO, BLUETHREE, PURPLEONE, PURPLETWO, PURPLETHREE, GRAYONE, GRAYTWO, WHITEONE, WHITETWO, SILVERTHREE, SILVERFOUR, GOLDENTHREE,GOLDENFOUR;
+terminal            SEMI, PLUS, MINUS, UMINUS, TIMES, LPAREN,DIVIDE,SQRT, RPAREN,EQUAL;
+terminal  BLACKONE,BLACKTWO,BLACKTHREE,BROWNONE, BROWNTWO, BROWNTHREE, REDONE, REDTWO, REDTHREE,ORANGEONE,ORANGETWO,ORANGETHREE, YELLOWONE, YELLOWTWO, YELLOWTHREE, GREENONE, GREENTWO, GREENTHREE, BLUEONE, BLUETWO, BLUETHREE, PURPLEONE, PURPLETWO, PURPLETHREE, GRAYONE, GRAYTWO, WHITEONE, WHITETWO, SILVERTHREE, SILVERFOUR, GOLDENTHREE,GOLDENFOUR;
 terminal Integer    NUMBER;        // our scanner provides numbers as integers
 
 /* Non terminals */
@@ -41,8 +43,8 @@ non terminal Integer    expr;      // used to store evaluated subexpressions
 
 /* Precedences */
 precedence left PLUS, MINUS;
-precedence left TIMES,BLACKONE,BLACKTWO,BLACKTHREE;
-precedence left BROWNONE, BROWNTWO, BROWNTHREE, REDONE, REDTWO, REDTHREE,ORANGEONE,ORANGETWO,ORANGETHREE, YELLOWONE, YELLOWTWO, YELLOWTHREE, GREENONE, GREENTWO, GREENTHREE, BLUEONE, BLUETWO, BLUETHREE, PURPLEONE, PURPLETWO, PURPLETHREE, GRAYONE, GRAYTWO, WHITEONE, WHITETWO, SILVERTHREE, SILVERFOUR, GOLDENTHREE,GOLDENFOUR;
+precedence left TIMES,DIVIDE,SQRT,EQUAL;
+precedence left BLACKONE,BLACKTWO,BLACKTHREE,BROWNONE, BROWNTWO, BROWNTHREE, REDONE, REDTWO, REDTHREE,ORANGEONE,ORANGETWO,ORANGETHREE, YELLOWONE, YELLOWTWO, YELLOWTHREE, GREENONE, GREENTWO, GREENTHREE, BLUEONE, BLUETWO, BLUETHREE, PURPLEONE, PURPLETWO, PURPLETHREE, GRAYONE, GRAYTWO, WHITEONE, WHITETWO, SILVERTHREE, SILVERFOUR, GOLDENTHREE,GOLDENFOUR;
 precedence left UMINUS;
 
 /* The grammar rules */
@@ -69,15 +71,23 @@ expr_list ::= expr_list expr:e SEMI         {:  if (e == 101) System.out.print("
 												else if (e == 108) System.out.print("*100k"); 
 												else if (e == 109) System.out.print("*1M"); 
 												else if (e == 110) System.out.print("*10M"); 
-												else if (e == 1000) System.out.println("± 10%"); 
-												else if (e == 1500) System.out.println("± 5%"); 
+												else if (e == 1000) System.out.println("+-10%"); 
+												else if (e == 1500) System.out.println("+-5%"); 
 												else System.out.print(e); :}
+												
+            | expr_list expr:e EQUAL         {: if (e < -1000000) System.out.println(Math.sqrt(e+10000000)); 
+												else System.out.println(e + Math.sqrt(0)); :}
+            | expr:e EQUAL                   {: if (e < -1000000) System.out.println(Math.sqrt(e+10000000)); 
+												else System.out.println(e + Math.sqrt(0)); :}
+            
             ;
             
             
 expr      ::= expr:e1 PLUS  expr:e2         {: RESULT = e1+e2;        :}
              | expr:e1 MINUS expr:e2        {: RESULT = e1-e2;        :}
              | expr:e1 TIMES expr:e2        {: RESULT = e1*e2;        :}
+             | expr:e1 DIVIDE expr:e2        {: RESULT = e1/e2;        :}
+             | SQRT expr:e1       {: RESULT = e1-10000000;        :}
              
              | BLACKONE   			{: RESULT = 0;        :}
              | BLACKTWO   			{: RESULT = 0;        :}
