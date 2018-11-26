@@ -60,7 +60,7 @@ begin
 			end if;
 			if (b_state = '1') then
 				cur_pattern <= cur_pattern + 1;
-				if (cur_pattern >= 3) then
+				if (cur_pattern >= 8) then
 						cur_pattern <= 1;
 				end if;
 			end if;
@@ -71,78 +71,58 @@ begin
 			if clk'event and clk = '1' then
 				case cur_state is
 				
-						WHEN S1 => seg7_disp <= "10000000" ; 
+						WHEN S1 => seg7_disp <= "11111100" ; 
 							if (disp_en = '1') then
 								if (cur_pattern = 1) then
-									cur_state <= S2;
-								elsif (cur_pattern = 2) then
-									cur_state <= S8;
-								elsif (cur_pattern = 3) then 
 									cur_state <= S2;
 								end if;
 							end if;
 							
-						WHEN S2 => seg7_disp <= "01000000" ; 
+						WHEN S2 => seg7_disp <= "01100000" ; 
 							if (disp_en = '1') then
-								if (cur_pattern = 1) then
-									cur_state <= S6;
-								elsif (cur_pattern = 2) then
-									cur_state <= S1;
-								elsif (cur_pattern = 3) then
+								if (cur_pattern = 2) then
 									cur_state <= S3;
 								end if;
 							end if;
 							
-						WHEN S3 => seg7_disp <= "00000010" ; 
-							if (disp_en = '1' and cur_pattern = 3) then 
-								cur_state <= S4;
-							end if;
-							
-						WHEN S4 => seg7_disp <= "00001000" ; 
+						WHEN S3 => seg7_disp <= "11011010" ; 
 							if (disp_en = '1') then
-								if (cur_pattern = 1) then
-									cur_state <= S8;
-								elsif (cur_pattern = 2) then
-									cur_state <= S5;
-								elsif (cur_pattern = 3) then 
-									cur_state <= S5;
-								end if;
-							end if;
-							
-						WHEN S5 => seg7_disp <= "00010000" ; 
-							if (disp_en = '1') then
-								if (cur_pattern = 1) then
+								if (cur_pattern = 3) then
 									cur_state <= S4;
-								elsif (cur_pattern = 2) then
-									cur_state <= S6;
-								elsif (cur_pattern = 3) then 
+								end if;
+							end if;
+							
+						WHEN S4 => seg7_disp <= "11110010" ; 
+							if (disp_en = '1') then
+								if (cur_pattern = 4) then
+									cur_state <= S5;
+								end if;
+							end if;
+							
+						WHEN S5 => seg7_disp <= "01100110" ; 
+							if (disp_en = '1') then
+								if (cur_pattern = 5) then
 									cur_state <= S6;
 								end if;
 							end if;
 							
-						WHEN S6 => seg7_disp <= "00100000" ; 
+						WHEN S6 => seg7_disp <= "10110110" ; 
 							if (disp_en = '1') then
-								if (cur_pattern = 1) then
-									cur_state <= S5;
-								elsif (cur_pattern = 2) then
-									cur_state <= S2;
-								elsif (cur_pattern = 3) then
+								if (cur_pattern = 6) then
 									cur_state <= S7;
 								end if;
 							end if;
 							
-						WHEN S7 => seg7_disp <= "00000010" ; 
-							if (disp_en = '1' and cur_pattern = 3) then 
-								cur_state <= S8;
+						WHEN S7 => seg7_disp <= "10111110" ; 
+							if (disp_en = '1') then
+								if (cur_pattern = 7) then
+									cur_state <= S8;
+								end if;
 							end if;
 							
-						WHEN S8 => seg7_disp <= "00000100" ; 
+						WHEN S8 => seg7_disp <= "10011110" ; 
 							if (disp_en = '1') then
-								if (cur_pattern = 1) then
-									cur_state <= S1;
-								elsif (cur_pattern = 2) then
-									cur_state <= S4;
-								elsif (cur_pattern = 3) then
+								if (cur_pattern = 8) then
 									cur_state <= S1;
 								end if;
 							end if;

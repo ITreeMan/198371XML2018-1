@@ -24,6 +24,7 @@ entity light_pattern is
 	Port ( clk : in  STD_LOGIC;
           seg7_disp : out  STD_LOGIC_vector(7 downto 0);
 			 PB5 : in STD_LOGIC;
+			 toggle : in STD_LOGIC;
 			 led_disp : out STD_LOGIC);
 end light_pattern;
 
@@ -35,7 +36,8 @@ architecture Behavioral of light_pattern is
 		signal disp_en : STD_LOGIC := '0';
 		signal b_state : std_logic := '0'; 
 
-begin
+begin	
+
 		led_disp <= '0';
 		
 		counter: process(clk, count_d)
@@ -73,6 +75,7 @@ begin
 				
 		FSM: process(clk, disp_en, cur_pattern)
 		begin
+		if toggle = '0' then
 			if clk'event and clk = '1' then
 				case cur_state is
 				
@@ -135,6 +138,72 @@ begin
 						WHEN OTHERS => cur_state <= S1;
 				end case; 
 			end if;
+
+			else 
+						if clk'event and clk = '1' then
+				case cur_state is
+				
+						WHEN S1 => seg7_disp <= "11111100" ; 
+							if (disp_en = '1') then
+								if (cur_pattern = 1) then
+									cur_state <= S1;
+								end if;
+							end if;
+							
+						WHEN S2 => seg7_disp <= "01100000" ; 
+							if (disp_en = '1') then
+								if (cur_pattern = 2) then
+									cur_state <= S1;
+								end if;
+							end if;
+							
+						WHEN S3 => seg7_disp <= "11011010" ; 
+							if (disp_en = '1') then
+								if (cur_pattern = 3) then
+									cur_state <= S2;
+								end if;
+							end if;
+							
+						WHEN S4 => seg7_disp <= "11110010" ; 
+							if (disp_en = '1') then
+								if (cur_pattern = 4) then
+									cur_state <= S3;
+								end if;
+							end if;
+							
+						WHEN S5 => seg7_disp <= "01100110" ; 
+							if (disp_en = '1') then
+								if (cur_pattern = 5) then
+									cur_state <= S4;
+								end if;
+							end if;
+							
+						WHEN S6 => seg7_disp <= "10110110" ; 
+							if (disp_en = '1') then
+								if (cur_pattern = 6) then
+									cur_state <= S5;
+								end if;
+							end if;
+							
+						WHEN S7 => seg7_disp <= "10111110" ; 
+							if (disp_en = '1') then
+								if (cur_pattern = 7) then
+									cur_state <= S6;
+								end if;
+							end if;
+							
+						WHEN S8 => seg7_disp <= "10011110" ; 
+							if (disp_en = '1') then
+								if (cur_pattern = 8) then
+									cur_state <= S7;
+								end if;
+							end if;
+						
+						WHEN OTHERS => cur_state <= S1;
+				end case; 
+			end if;
+		end if;	
+			
 		end process FSM;
 
 end Behavioral;

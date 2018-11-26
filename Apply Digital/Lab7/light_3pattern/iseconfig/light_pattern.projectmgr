@@ -9,13 +9,13 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>light_pattern - Behavioral (C:/Users/ITreeMan/Desktop/Lab7/light_3pattern/light_pattern.vhd)</SelectedItem>
+         <SelectedItem>light_pattern - Behavioral (C:/Users/ITreeMan/Documents/198371XML2018-1/Apply Digital/Lab7/light_3pattern/light_pattern.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000013e000000020000000000000000000000000200000064ffffffff0000008100000003000000020000013e0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>light_pattern - Behavioral (C:/Users/ITreeMan/Desktop/Lab7/light_3pattern/light_pattern.vhd)</CurrentItem>
+      <CurrentItem>light_pattern - Behavioral (C:/Users/ITreeMan/Documents/198371XML2018-1/Apply Digital/Lab7/light_3pattern/light_pattern.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -59,13 +59,13 @@
          <ClosedNodesVersion>2</ClosedNodesVersion>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem>uut - light_pattern - Behavioral (C:/Users/ITreeMan/Desktop/Lab7/light_3pattern/light_pattern.vhd)</SelectedItem>
+         <SelectedItem>uut - light_pattern - Behavioral (C:/Users/ITreeMan/Documents/198371XML2018-1/Apply Digital/Lab7/light_3pattern/light_pattern.vhd)</SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff0000000000000001000000010000000000000000000000000000000002020000000100000001000000640000015f000000020000000000000000000000000200000064ffffffff0000008100000003000000020000015f0000000100000003000000000000000100000003</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >true</UserChangedColumnWidths>
-      <CurrentItem>uut - light_pattern - Behavioral (C:/Users/ITreeMan/Desktop/Lab7/light_3pattern/light_pattern.vhd)</CurrentItem>
+      <CurrentItem>uut - light_pattern - Behavioral (C:/Users/ITreeMan/Documents/198371XML2018-1/Apply Digital/Lab7/light_3pattern/light_pattern.vhd)</CurrentItem>
    </ItemView>
    <ItemView engineview="BehavioralSim" sourcetype="" guiview="Process" >
       <ClosedNodes>
@@ -73,13 +73,13 @@
          <ClosedNode>Design Utilities</ClosedNode>
       </ClosedNodes>
       <SelectedItems>
-         <SelectedItem/>
+         <SelectedItem></SelectedItem>
       </SelectedItems>
       <ScrollbarPosition orientation="vertical" >0</ScrollbarPosition>
       <ScrollbarPosition orientation="horizontal" >0</ScrollbarPosition>
       <ViewHeaderState orientation="horizontal" >000000ff000000000000000100000001000000000000000000000000000000000000000000000001d7000000010000000100000000000000000000000064ffffffff000000810000000000000001000001d70000000100000000</ViewHeaderState>
       <UserChangedColumnWidths orientation="horizontal" >false</UserChangedColumnWidths>
-      <CurrentItem/>
+      <CurrentItem></CurrentItem>
    </ItemView>
    <ItemView engineview="SynthesisOnly" sourcetype="DESUT_VHDL_ARCHITECTURE" guiview="Process" >
       <ClosedNodes>
