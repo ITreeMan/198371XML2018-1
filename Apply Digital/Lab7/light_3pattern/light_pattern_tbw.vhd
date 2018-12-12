@@ -43,7 +43,7 @@ ARCHITECTURE behavior OF light_pattern_tbw IS
     PORT(
          clk : IN  std_logic;
          seg7_disp : OUT  std_logic_vector(7 downto 0);
-         PB5 : IN  std_logic;
+         PB1 : IN  std_logic;
          led_disp : OUT  std_logic
         );
     END COMPONENT;
@@ -51,7 +51,7 @@ ARCHITECTURE behavior OF light_pattern_tbw IS
 
    --Inputs
    signal clk : std_logic := '0';
-   signal PB5 : std_logic := '0';
+   signal PB1 : std_logic := '0';
 
  	--Outputs
    signal seg7_disp : std_logic_vector(7 downto 0);
@@ -66,7 +66,7 @@ BEGIN
    uut: light_pattern PORT MAP (
           clk => clk,
           seg7_disp => seg7_disp,
-          PB5 => PB5,
+          PB1 => PB1,
           led_disp => led_disp
         );
 
@@ -84,21 +84,21 @@ BEGIN
    stim_proc: process
    begin		
       wait for 800 ns;	
-		PB5 <= '1' ;
+		PB1 <= '1' ;
 		wait for 10 ns ;
-		PB5 <= '0' ;
+		PB1 <= '0' ;
 		wait for 20 ns ;
 		
 		wait for 800 ns;	
-		PB5 <= '1' ;
+		PB1 <= '1' ;
 		wait for 10 ns ;
-		PB5 <= '0' ;
+		PB1 <= '0' ;
 		wait for 20 ns ;
 		
 		wait for 800 ns;	
-		PB5 <= '1' ;
+		PB1 <= '1' ;
 		wait for 10 ns ;
-		PB5 <= '0' ;
+		PB1 <= '0' ;
 		wait for 20 ns ;
 
    end process;
