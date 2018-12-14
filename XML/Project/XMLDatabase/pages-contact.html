@@ -241,8 +241,8 @@
 
 				<div id="contact-message"></div> 
 
-					<form method="post" action="contact.php" name="contactform" id="contactform" autocomplete="on">
-
+					<form method="POST" action="contact.php" name="contactform" id="contactform" autocomplete="on">
+					<input type="hidden" name="_subject" value="Contact to Admin" />
 					<div class="row">
 						<div class="col-md-6">
 							<div>
@@ -360,6 +360,7 @@
 <script type="text/javascript" src="scripts/jquery-ui.min.js"></script>
 <script type="text/javascript" src="scripts/tooltips.min.js"></script>
 <script type="text/javascript" src="scripts/custom.js"></script>
+<script type="text/javascript" src="scripts/sentMail.js"></script>
 
 <!-- Maps -->
 <script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAk7mSHqM-dICaQ-xkm7WPj1P5hVn0lTd0&callback=initMap" type="text/javascript"></script>

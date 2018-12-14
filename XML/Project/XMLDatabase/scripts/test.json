@@ -1,0 +1,46 @@
+{
+    "otopobj": [
+      {
+        "product_id": "44",
+        "g_name": "กลุ่มไทบ้าน",
+        "p_type": "หัตถกรรม",
+        "c_name": "นางสาวจุฬาลักษณ์ ปลัดขวา",
+        "address": "69/2 ตำบลบ้านไผ่ อำเภอบ้านไผ่ ",
+        "province": "ขอนแก่น",
+        "zipcode": "40110",
+        "locate": "20.723418599999999 , 150.4762319",
+        "pic1": "img_5c1187bb141f0.jpg",
+        "pic2": "img_5c1187bb1462d.png",
+        "pic3": "img_5c1187bb149af.png",
+        "pic4": "img_5c1187bb14cc9.png",
+        "description": "มองบนแพพพพพพ",
+        "tel": "0945304058",
+        "web": "www.ilittlestar.com",
+        "email": "f_0844010355@hotmail.com",
+        "face": "https://web.facebook.com/non",
+        "twitter": "https://twitter.com/non",
+        "line": "lit"
+      },
+      {
+        "product_id": "45",
+        "g_name": "รีบดูก่อนโดนลบ",
+        "p_type": "อื่นๆ",
+        "c_name": "อนุสรณฺ์ แปลจังหรีด",
+        "address": "324/2 หมู่ที่ 20 ถ.คุ้มขนมจีน ซอย1 ตำบลบ้านไผ่ อำเภอบ้านไผ่",
+        "province": "ขอนแก่น",
+        "zipcode": "40110",
+        "locate": "30.485844399999998 , 150.8173154",
+        "pic1": "img_5c11881f1f4ae.png",
+        "pic2": "img_5c11881f1f71f.png",
+        "pic3": "img_5c11881f1f9d6.png",
+        "pic4": "img_5c11881f1fcc0.png",
+        "description": "ไม่บอก อย่าหลอกถาม",
+        "tel": "0945304058",
+        "web": "www.ItreeMan.com",
+        "email": "p_anusorn@kkumail.com",
+        "face": "https://web.facebook.com/AnsPjr",
+        "twitter": "https://twitter.com/AnsPjr",
+        "line": "cp"
+      }
+    ]
+  }

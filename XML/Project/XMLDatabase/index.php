@@ -79,92 +79,6 @@
 				<div class="small-dialog-header">
 					<h3>Sign In</h3>
 				</div>
-
-				<!--Tabs -->
-				<div class="sign-in-form style-1">
-
-					<ul class="tabs-nav">
-						<li class=""><a href="#tab1">Log In</a></li>
-						<li><a href="#tab2">Register</a></li>
-					</ul>
-
-					<div class="tabs-container alt">
-
-						<!-- Login -->
-						<div class="tab-content" id="tab1" style="display: none;">
-							<form method="post" class="login">
-
-								<p class="form-row form-row-wide">
-									<label for="username">Username:
-										<i class="im im-icon-Male"></i>
-										<input type="text" class="input-text" name="username" id="username" value="" />
-									</label>
-								</p>
-
-								<p class="form-row form-row-wide">
-									<label for="password">Password:
-										<i class="im im-icon-Lock-2"></i>
-										<input class="input-text" type="password" name="password" id="password"/>
-									</label>
-									<span class="lost_password">
-										<a href="#" >Lost Your Password?</a>
-									</span>
-								</p>
-
-								<div class="form-row">
-									<input type="submit" class="button border margin-top-5" name="login" value="Login" />
-									<div class="checkboxes margin-top-10">
-										<input id="remember-me" type="checkbox" name="check">
-										<label for="remember-me">Remember Me</label>
-									</div>
-								</div>
-								
-							</form>
-						</div>
-
-						<!-- Register -->
-						<div class="tab-content" id="tab2" style="display: none;">
-
-							<form method="post" class="register">
-								
-							<p class="form-row form-row-wide">
-								<label for="username2">Username:
-									<i class="im im-icon-Male"></i>
-									<input type="text" class="input-text" name="username" id="username2" value="" />
-								</label>
-							</p>
-								
-							<p class="form-row form-row-wide">
-								<label for="email2">Email Address:
-									<i class="im im-icon-Mail"></i>
-									<input type="text" class="input-text" name="email" id="email2" value="" />
-								</label>
-							</p>
-
-							<p class="form-row form-row-wide">
-								<label for="password1">Password:
-									<i class="im im-icon-Lock-2"></i>
-									<input class="input-text" type="password" name="password1" id="password1"/>
-								</label>
-							</p>
-
-							<p class="form-row form-row-wide">
-								<label for="password2">Repeat Password:
-									<i class="im im-icon-Lock-2"></i>
-									<input class="input-text" type="password" name="password2" id="password2"/>
-								</label>
-							</p>
-
-							<input type="submit" class="button border fw margin-top-10" name="register" value="Register" />
-	
-							</form>
-						</div>
-
-					</div>
-				</div>
-			</div>
-			<!-- Sign In Popup / End -->
-
 		</div>
 	</div>
 	<!-- Header / End -->
@@ -194,23 +108,23 @@
 							<input type="text" placeholder="กลุ่มผลิตภัณฑ์" value=""/>
 						</div>
 						<div class="main-search-input-item location">
-							<input type="text" placeholder="Location" value=""/>
-							<a href="#"><i class="fa fa-dot-circle-o"></i></a>
+							<input name = "locate" id="Locate" type="text" placeholder="Location" value="" />
+							<a ><i class="fa fa-dot-circle-o" onclick="getLocation()" ></i></a>
 						</div>
 
 						<div class="main-search-input-item">
-							<select data-placeholder="All Categories" class="chosen-select" >
-								<option >All Categories</option>	
-								<option >Eat & Drink</option>
-								<option>Appliance</option>
-								<option>Decoration</option>
-								<option>Costume</option>
-								<option>Accessories</option>
-								<option>etc</option>
+							<select data-placeholder="All Categories" class="chosen-select" name = "ptype" id="ptype" >
+								<option>ทั้งหมด</option>
+								<option>หัตถกรรม</option>
+								<option>เครื่องแต่งกาย</option>
+								<option>เครื่องจักรสาน</option>
+								<option>ของใช้</option>
+								<option>เครื่องประดับ</option>
+								<option>อื่นๆ</option>
 							</select>
 						</div>
 
-						<button class="button">Search</button>
+						<button class="button" id="search-map">Search</button>
 
 					</div>
 				</div>
@@ -220,7 +134,7 @@
 	</div>
 
     <!-- Scroll Enabling Button -->
-	<a href="#" id="scrollEnabling" title="Enable or disable scrolling on map">Enable Scrolling</a>
+	<a  id="scrollEnabling" title="Enable or disable scrolling on map">Enable Scrolling</a>
 </div>
 
 <!-- Content
@@ -244,7 +158,7 @@
 
 
 						<!-- Panel Dropdown-->
-						<div class="panel-dropdown float-right">
+						<!-- <div class="panel-dropdown float-right">
 							<a href="#">Distance Radius</a>
 							<div class="panel-dropdown-content">
 								<input class="distance-radius" type="range" min="1" max="100" step="1" value="50" data-title="Radius around selected destination">
@@ -253,21 +167,19 @@
 									<button class="panel-apply">Apply</button>
 								</div>
 							</div>
-						</div>
+						</div> -->
 						<!-- Panel Dropdown / End -->
 
 						<!-- Sort by -->
-						<div class="sort-by">
+						<!-- <div class="sort-by">
 							<div class="sort-by-select">
 								<select data-placeholder="Default order" class="chosen-select-no-single">
 									<option>Default Order</option>	
-									<option>Highest Rated</option>
-									<option>Most Reviewed</option>
 									<option>Newest Listings</option>
 									<option>Oldest Listings</option>
 								</select>
 							</div>
-						</div>
+						</div> -->
 						<!-- Sort by / End -->
 
 					</div>
@@ -275,216 +187,65 @@
 
 			</div>
 			<!-- Sorting - Filtering Section / End -->
+			
+<?php 
+
+	require'./contactDB.php';
+	//if ()
+	$sql="select*from product";
+	$result = mysqli_query($con,$sql);
+	$count = mysqli_num_rows($result);
+	//echo $count;
+	 echo "<link rel="."stylesheet"." href="."css/style.css".">";
+	echo "<link rel="."stylesheet" ." href="."css/colors/main.css"." id="."colors".">";
+	echo "<div class="."row".">";
+	for ($i =0; $i < $count; $i++) {
+		$row = mysqli_fetch_object($result);
+		//$img = pic1;
+		
+		//Listing Item
+		echo "<div class= 'col-lg-12 col-md-12'>";
+			echo "<div class="."'listing-item-container list-layout'".">";
+				echo "<a href=".$row->product_id."php" ." ".'method = "get"'." class="."listing-item".">";
+					//Picture
+					echo "<div class="."listing-item-image".">";
+						echo "<img src="."picInput/".$row->pic1." alt="."".">" ;
+						echo "<span class="."tag".">".$row->p_type."</span>";
+					echo "</div>";
+
+					//content
+					echo "<div class="."listing-item-content".">";
+						echo  "<div class="."listing-badge"."&#x20"."now-open".">Now Open</div>";
+						echo "<div class="."listing-item-inner".">";
+							echo "<h3>".$row->g_name ." <i class="."verified-icon"."></i></h3>";
+							echo "<span>".$row->address."</span>";
+							echo "<div class="."star-rating" ." "."data-rating="."3.5".">" ;
+								echo "<div class="."rating-counter".">(12 reviews)</div>";
+							echo "</div>";
+						echo "</div>";
+						echo "<span class="."like-icon"."></span>";
+					echo "</div>";
+				echo "</a>";
+			echo "</div>";
+		echo "</div>";
+					
+
+		// echo "id: ".$row-> product_id."<br>";
+		// echo "id: ".$row-> product_id."<br>";
+		// echo "id: ".$row-> product_id."<br>";
+		// echo "id: ".$row-> product_id."<br>";
+		// echo "id: ".$row-> product_id."<br>";
 
 
-			<div class="row">
 
-				<!-- Listing Item -->
-				<div class="col-lg-12 col-md-12">
-					<div class="listing-item-container list-layout">
-						<a href="listings-single-page.html" class="listing-item">
-							
-							<!-- Image -->
-							<div class="listing-item-image">
-								<img src="images/listing-item-01.jpg" alt="">
-								<span class="tag">Eat & Drink</span>
-							</div>
-							
-							<!-- Content -->
-							<div class="listing-item-content">
-								<div class="listing-badge now-open">Now Open</div>
 
-								<div class="listing-item-inner">
-									<h3>Tom's Restaurant <i class="verified-icon"></i></h3>
-									<span>964 School Street, New York</span>
-									<div class="star-rating" data-rating="3.5">
-										<div class="rating-counter">(12 reviews)</div>
-									</div>
-								</div>
+	}
 
-								<span class="like-icon"></span>
-							</div>
-						</a>
-					</div>
-				</div>
-				<!-- Listing Item / End -->
 
-				<!-- Listing Item -->
-				<div class="col-lg-12 col-md-12">
-					<div class="listing-item-container list-layout">
-						<a href="listings-single-page.html" class="listing-item">
-							
-							<!-- Image -->
-							<div class="listing-item-image">
-								<img src="images/listing-item-02.jpg" alt="">
-								<span class="tag">Events</span>
-							</div>
-							
-							<!-- Content -->
-							<div class="listing-item-content">
 
-								<div class="listing-item-inner">
-								<h3>Sticky Band</h3>
-								<span>Bishop Avenue, New York</span>
-									<div class="star-rating" data-rating="5.0">
-										<div class="rating-counter">(23 reviews)</div>
-									</div>
-								</div>
 
-								<span class="like-icon"></span>
+?>
 
-								<div class="listing-item-details">Friday, August 10</div>
-							</div>
-						</a>
-					</div>
-				</div>
-				<!-- Listing Item / End -->
-
-				<!-- Listing Item -->
-				<div class="col-lg-12 col-md-12">
-					<div class="listing-item-container list-layout">
-						<a href="listings-single-page.html" class="listing-item">
-							
-							<!-- Image -->
-							<div class="listing-item-image">
-								<img src="images/listing-item-03.jpg" alt="">
-								<span class="tag">Hotels</span>
-							</div>
-							
-							<!-- Content -->
-							<div class="listing-item-content">
-
-								<div class="listing-item-inner">
-								<h3>Hotel Govendor</h3>
-								<span>778 Country Street, New York</span>
-									<div class="star-rating" data-rating="2.0">
-										<div class="rating-counter">(17 reviews)</div>
-									</div>
-								</div>
-
-								<span class="like-icon"></span>
-
-								<div class="listing-item-details">Starting from $59 per night</div>
-							</div>
-						</a>
-					</div>
-				</div>
-				<!-- Listing Item / End -->
-
-				<!-- Listing Item -->
-				<div class="col-lg-12 col-md-12">
-					<div class="listing-item-container list-layout">
-						<a href="listings-single-page.html" class="listing-item">
-							
-							<!-- Image -->
-							<div class="listing-item-image">
-								<img src="images/listing-item-04.jpg" alt="">
-								<span class="tag">Eat & Drink</span>
-							</div>
-							
-							<!-- Content -->
-							<div class="listing-item-content">
-								<div class="listing-badge now-open">Now Open</div>
-								
-								<div class="listing-item-inner">
-								<h3>Burger House <i class="verified-icon"></i></h3>
-								<span>2726 Shinn Street, New York</span>
-									<div class="star-rating" data-rating="5.0">
-										<div class="rating-counter">(31 reviews)</div>
-									</div>
-								</div>
-
-								<span class="like-icon"></span>
-							</div>
-						</a>
-					</div>
-				</div>
-				<!-- Listing Item / End -->
-
-				<!-- Listing Item -->
-				<div class="col-lg-12 col-md-12">
-					<div class="listing-item-container list-layout">
-						<a href="listings-single-page.html" class="listing-item">
-							
-							<!-- Image -->
-							<div class="listing-item-image">
-								<img src="images/listing-item-05.jpg" alt="">
-								<span class="tag">Other</span>
-							</div>
-							
-							<!-- Content -->
-							<div class="listing-item-content">
-
-								<div class="listing-item-inner">
-								<h3>Airport</h3>
-								<span>1512 Duncan Avenue, New York</span>
-									<div class="star-rating" data-rating="3.5">
-										<div class="rating-counter">(46 reviews)</div>
-									</div>
-								</div>
-
-								<span class="like-icon"></span>
-							</div>
-						</a>
-					</div>
-				</div>
-				<!-- Listing Item / End -->
-
-				<!-- Listing Item -->
-				<div class="col-lg-12 col-md-12">
-					<div class="listing-item-container list-layout">
-						<a href="listings-single-page.html" class="listing-item">
-							
-							<!-- Image -->
-							<div class="listing-item-image">
-								<img src="images/listing-item-06.jpg" alt="">
-								<span class="tag">Eat & Drink</span>
-							</div>
-							
-							<!-- Content -->
-							<div class="listing-item-content">
-								<div class="listing-badge now-closed">Now Closed</div>
-
-								<div class="listing-item-inner">
-								<h3>Think Coffee</h3>
-								<span>215 Terry Lane, New York</span>
-									<div class="star-rating" data-rating="5.0">
-										<div class="rating-counter">(31 reviews)</div>
-									</div>
-								</div>
-
-								<span class="like-icon"></span>
-							</div>
-						</a>
-					</div>
-				</div>
-				<!-- Listing Item / End -->
-
-			</div>
-
-			<!-- Pagination -->
-			<div class="clearfix"></div>
-			<div class="row">
-				<div class="col-md-12">
-					<!-- Pagination -->
-					<div class="pagination-container margin-top-20 margin-bottom-40">
-						<nav class="pagination">
-							<ul>
-								<li><a href="#" class="current-page">1</a></li>
-								<li><a href="#">2</a></li>
-								<li><a href="#">3</a></li>
-								<li><a href="#"><i class="sl sl-icon-arrow-right"></i></a></li>
-							</ul>
-						</nav>
-					</div>
-				</div>
-			</div>
-			<!-- Pagination / End -->
-
-		</div>
-
-	</div>
-</div>
 
 
 <!-- Footer
@@ -557,6 +318,25 @@
 <!-- Wrapper / End -->
 
 
+<!-- Get Location Latitude and Longitude  -->
+<script>
+
+		function getLocation() {
+		  if (navigator.geolocation) {
+			navigator.geolocation.getCurrentPosition(showPosition);
+		  } else { 
+			x.innerHTML = "Geolocation is not supported by this browser.";
+		  }
+		}
+		
+		function showPosition(position) {
+			document.getElementById("Locate").value = position.coords.latitude + 
+		  " , " + position.coords.longitude;
+		}
+		</script>
+
+
+<!-- ================================================== --> 
 
 <!-- Scripts
 ================================================== -->
@@ -575,7 +355,7 @@
 
 <!-- Maps -->
 <!-- <script type="text/javascript" src="http://maps.google.com/maps/api/js?key=AIzaSyAk7mSHqM-dICaQ-xkm7WPj1P5hVn0lTd0"></script> -->
-<script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAk7mSHqM-dICaQ-xkm7WPj1P5hVn0lTd0&callback=initMap" type="text/javascript"></script>
+<script  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAk7mSHqM-dICaQ-xkm7WPj1P5hVn0lTd0" type="text/javascript"></script>
 <script type="text/javascript" src="scripts/infobox.min.js"></script>
 <script type="text/javascript" src="scripts/markerclusterer.js"></script>
 <script type="text/javascript" src="scripts/maps.js"></script>
@@ -586,3 +366,6 @@
 
 </body>
 </html>
+
+
+

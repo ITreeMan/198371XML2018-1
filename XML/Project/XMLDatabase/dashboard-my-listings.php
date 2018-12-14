@@ -142,128 +142,39 @@
 				<div class="row">
 
 					<!-- Listings -->
-					<div class="col-lg-12 col-md-12">
-						<div class="dashboard-list-box margin-top-0">
-							<h4>Active Listings</h4>
-							<ul>
+			<?php 
 
-								<li>
-									<div class="list-box-listing">
-										<div class="list-box-listing-img"><a href="#"><img src="images/listing-item-01.jpg" alt=""></a></div>
-										<div class="list-box-listing-content">
-											<div class="inner">
-												<h3><a href="#">Tom's Restaurant</a></h3>
-												<span>964 School Street, New York</span>
-												<div class="star-rating" data-rating="3.5">
-													<div class="rating-counter">(12 reviews)</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="buttons-to-right">
-										<a href="#" class="button gray"><i class="sl sl-icon-note"></i> Edit</a>
-										<a href="#" class="button gray"><i class="sl sl-icon-close"></i> Delete</a>
-									</div>
-								</li>
+				require'./contactDB.php';
+				$sql="select*from product";
+				$result = mysqli_query($con,$sql);
+				$count = mysqli_num_rows($result);
 
-								<li>
-									<div class="list-box-listing">
-										<div class="list-box-listing-img"><a href="#"><img src="images/listing-item-02.jpg" alt=""></a></div>
-										<div class="list-box-listing-content">
-											<div class="inner">
-												<h3>Sticky Band</h3>
-												<span>Bishop Avenue, New York</span>
-												<div class="star-rating" data-rating="5.0">
-													<div class="rating-counter">(23 reviews)</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="buttons-to-right">
-										<a href="#" class="button gray"><i class="sl sl-icon-note"></i> Edit</a>
-										<a href="#" class="button gray"><i class="sl sl-icon-close"></i> Delete</a>
-									</div>
-								</li>
+				echo '<div class="col-lg-12 col-md-12">';
+				echo '<div class="dashboard-list-box margin-top-0">';
+					echo '<h4>Active Listings</h4>';
+				for ($i =0; $i < $count; $i++) {
+					$row = mysqli_fetch_object($result);
 
-								<li>
-									<div class="list-box-listing">
-										<div class="list-box-listing-img"><a href="#"><img src="images/listing-item-03.jpg" alt=""></a></div>
-										<div class="list-box-listing-content">
-											<div class="inner">
-												<h3>Hotel Govendor</h3>
-												<span>778 Country Street, New York</span>
-												<div class="star-rating" data-rating="2.0">
-													<div class="rating-counter">(17 reviews)</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="buttons-to-right">
-										<a href="#" class="button gray"><i class="sl sl-icon-note"></i> Edit</a>
-										<a href="#" class="button gray"><i class="sl sl-icon-close"></i> Delete</a>
-									</div>
-								</li>
+							
 
-								<li>
-									<div class="list-box-listing">
-										<div class="list-box-listing-img"><a href="#"><img src="images/listing-item-04.jpg" alt=""></a></div>
-										<div class="list-box-listing-content">
-											<div class="inner">
-												<h3>Burger House</h3>
-												<span>2726 Shinn Street, New York</span>
-												<div class="star-rating" data-rating="5.0">
-													<div class="rating-counter">(31 reviews)</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="buttons-to-right">
-										<a href="#" class="button gray"><i class="sl sl-icon-note"></i> Edit</a>
-										<a href="#" class="button gray"><i class="sl sl-icon-close"></i> Delete</a>
-									</div>
-								</li>
+							
+									echo '<div class="list-box-listing">';
+										echo '<div class="list-box-listing-img">'.'<a href=edit'.$row->product_id.'php'.'><img src="picInput/'.$row->pic1.'" alt=""></a></div>';
+										echo "<div class="."list-box-listing-content".">";
+											echo '<div class="inner">';
+												echo '<h3><a href="#">'. $row->g_name.'</a></h3>';
+												echo '<span>'.$row->address. $row->province.'</span>';
+												echo '</div>';
+											echo '</div>';
+										echo '</div>';
+										echo "<div class="."buttons-to-right".">";
+										echo "<a href="."#". "class="."button gray"."><i class="."sl sl-icon-note"."></i> Edit</a>";
+										echo "<a href="."#"." class="."button gray"."><i class=". " sl sl-icon-close "."></i> Delete</a>";
+										echo '</div>';
 
-								<li>
-									<div class="list-box-listing">
-										<div class="list-box-listing-img"><a href="#"><img src="images/listing-item-05.jpg" alt=""></a></div>
-										<div class="list-box-listing-content">
-											<div class="inner">
-												<h3>Airport</h3>
-												<span>1512 Duncan Avenue, New York</span>
-												<div class="star-rating" data-rating="3.5">
-													<div class="rating-counter">(46 reviews)</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="buttons-to-right">
-										<a href="#" class="button gray"><i class="sl sl-icon-note"></i> Edit</a>
-										<a href="#" class="button gray"><i class="sl sl-icon-close"></i> Delete</a>
-									</div>
-								</li>
+				}
+					?>
 
-								<li>
-									<div class="list-box-listing">
-										<div class="list-box-listing-img"><a href="#"><img src="images/listing-item-06.jpg" alt=""></a></div>
-										<div class="list-box-listing-content">
-											<div class="inner">
-												<h3>Think Coffee</h3>
-												<span>215 Terry Lane, New York</span>
-												<div class="star-rating" data-rating="5.0">
-													<div class="rating-counter">(31 reviews)</div>
-												</div>
-											</div>
-										</div>
-									</div>
-									<div class="buttons-to-right">
-										<a href="#" class="button gray"><i class="sl sl-icon-note"></i> Edit</a>
-										<a href="#" class="button gray"><i class="sl sl-icon-close"></i> Delete</a>
-									</div>
-								</li>
-
-							</ul>
-						</div>
-					</div>
 
 
 					<!-- Copyrights -->
