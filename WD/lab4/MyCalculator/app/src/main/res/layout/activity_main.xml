@@ -11,6 +11,7 @@
         android:layout_width="125dp"
         android:layout_height="wrap_content"
         android:textAlignment="center"
+        android:inputType="number"
 
         />
     <EditText
@@ -19,7 +20,7 @@
         android:layout_height="wrap_content"
         android:layout_toRightOf="@id/num1"
         android:textAlignment="center"
-
+    android:inputType="number"
         />
 
     <TextView
@@ -29,7 +30,7 @@
         android:layout_toEndOf="@+id/num2"
         android:textSize="30dp"
 
-        >
+        android:layout_toRightOf="@+id/num2">
 
     </TextView>
 
@@ -55,6 +56,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/txtPlus"
+            android:layout_marginLeft="16dp"
             />
 
         <RadioButton
@@ -62,6 +64,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/txtMinus"
+            android:layout_marginLeft="16dp"
             />
 
         <RadioButton
@@ -69,6 +72,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/txtMulti"
+            android:layout_marginLeft="16dp"
             />
 
         <RadioButton
@@ -76,6 +80,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/txtDivid"
+            android:layout_marginLeft="16dp"
             />
 
     </RadioGroup>
@@ -88,7 +93,8 @@
         android:layout_alignParentStart="true"
         android:layout_below="@+id/radGroup"
         android:indeterminate="true"
-        android:progress="50" />
+        android:progress="50"
+        android:layout_alignParentLeft="true" />
 
     <Switch
         android:id="@+id/switchOnOff"

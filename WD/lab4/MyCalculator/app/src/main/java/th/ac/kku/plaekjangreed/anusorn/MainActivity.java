@@ -28,13 +28,13 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Switch swOnOff ;
     TextView tvAns ;
     EditText  getNum1, getNum2 ;
-    Integer val1 =0 , val2 =0 ,valAns =0;
+    float val1 =0 , val2 =0 ,valAns =0;
     Button calButt ;
     RadioGroup radioGroup ;
     RadioButton rdPlus , rdMinus , rdMultiplie, rdDiv ;
     Toast toast ;
     Long start=null, stop=null ;
-    Float timeCurrent = null ;
+    Double timeCurrent = null ;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -63,9 +63,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     }
 
     private void acceptNumbers(){
+        start = System.currentTimeMillis();
         try {
-            val1 = Integer.parseInt(getNum1.getText().toString());
-            val2 = Integer.parseInt(getNum2.getText().toString());
+            val1 = Float.parseFloat(getNum1.getText().toString());
+            val2 = Float.parseFloat(getNum2.getText().toString());
+
         }
         catch (NumberFormatException nf){
             showToast("Please enter only a number");
@@ -104,7 +106,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
     private void calculate(int i) {
         acceptNumbers();
-        start = System.currentTimeMillis();
+
         if (i == R.id.plus){
             valAns = val1 + val2 ;
         } else if (i == R.id.minus){
@@ -112,15 +114,23 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         } else if (i == R.id.multipile){
             valAns = val1 * val2 ;
         } else if (i == R.id.divide){
-            try{
-                valAns = val1 / val2;
-            }catch (ArithmeticException nz){
+//            try{
+//                valAns = val1 / val2;
+//            }catch (ArithmeticException nz){
+//                showToast("Please divide by a non-ZERO number");
+//            }
+            if (val2 != 0){
+                valAns = val1 / val2 ;
+            }
+            else  {
                 showToast("Please divide by a non-ZERO number");
             }
         }
         stop = System.currentTimeMillis();
-        timeCurrent = Float.valueOf(start - stop);
+        timeCurrent = Double.valueOf( stop - start);
         Log.d("Calculation", "computation time = " + timeCurrent);
+        Log.d("start", " time = " + start);
+        Log.d("stop", " stop = " + stop);
         tvAns.setText(" = " + valAns);
     }
 
