@@ -1,7 +1,0 @@
-<resources>
-    <string name="app_name" translatable="false">My First Android App</string>
-    <string name="name_text" translatable="false">Your name:</string>
-    <string name="phone_text" translatable="false">Your phone:</string>
-    <string name="has_text" translatable="false">has phone number as</string>
-    <string name="submit" translatable="false">SUBMIT</string>
-</resources>

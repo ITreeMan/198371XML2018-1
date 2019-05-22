@@ -1,8 +1,0 @@
-INTSTYLE=ise
-INFILE=C:\Users\Labcom8\Desktop\TestCountUpDown\light_pattern.ncd
-OUTFILE=C:\Users\Labcom8\Desktop\TestCountUpDown\light_pattern.bit
-FAMILY=Spartan3
-PART=xc3s200-4tq144
-WORKINGDIR=C:\Users\Labcom8\Desktop\TestCountUpDown
-LICENSE=WebPack
-USER_INFO=208478922_0_0_054

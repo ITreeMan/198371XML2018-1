@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<resources>
-    <string name="app_name">แอนดรอยด์แอปแรกของฉัน</string>
-    <string name="name_text" translatable="false">ชื่อ:</string>
-    <string name="phone_text" translatable="false">โทรศัพท์:</string>
-    <string name="has_text" translatable="false">มีหมายเลขโทรศัพท์คือ</string>
-    <string name="submit" translatable="false">ส่ง</string>
-</resources>

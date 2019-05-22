@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -o "C:/Users/ITreeMan/Downloads/LAB7 - Sec3 - Group6 - Board - Final/LAB7 - Sec3 - Group6 - Board - Final/LAB7/counte_tb_isim_beh.exe" -prj "C:/Users/ITreeMan/Downloads/LAB7 - Sec3 - Group6 - Board - Final/LAB7 - Sec3 - Group6 - Board - Final/LAB7/counte_tb_beh.prj" "work.counte_tb" 

@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">MyCalculator</string>
-    <string name="Clip">Clip any from over\n100,000 hot topics</string>
-    <string name="Welcome">Welcome to Clipzy</string>
-    <string name="Get_Start">GET START</string>
-    <string name="Skip">Skip</string>
-    <string name="By_Continuing">By continuing you accept the Term of Use and Privacy Policy</string>
-
-</resources>
