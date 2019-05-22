@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">WDPViewDemo</string>
+    <string name="add">บวก</string>
+    <string name="kku">มหาวิทยาลัยขอนแก่น</string>
+    <string name="kk">ขอนแก่น</string>
+</resources>

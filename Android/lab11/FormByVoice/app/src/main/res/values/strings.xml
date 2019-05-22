@@ -1,0 +1,145 @@
+<resources>
+    <string name="app_name">Form By Voice</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="navigation_text_sub">แบบฟอร์มด้วยเสียง</string>
+
+    <string name="f1">สร้างแบบฟอร์ม</string>
+    <string name="f2">ใช้แบบฟอร์ม</string>
+
+    <string name="form_head">แบบฟอร์มด้วยเสียง</string>
+    <string name="form_head_sub"></string>
+    <string name="detail_f1">รายละเอียด : สร้างแบบฟอร์มที่ต้องการ เพิ่มรูปภาพก่อน และสามารปรับขนาดฟอนต์ที่จะพิมพ์ได้  </string>
+    <string name="detail_f2">รายละเอียด : เลือกใช้แบบฟอร์มที่ต้องการ</string>
+
+    <string name="fill_data">กรุณากรอกข้อมูลให้ครบและถูกต้อง</string>
+    <string name="answer">เป็นคำตอบ</string>
+    <string name="add_data">เพิ่มเรียบร้อย</string>
+    <string name="edit_data">แก้ไขเรียบร้อย</string>
+    <string name="add_button">เพิ่ม</string>
+    <string name="edit_button">แก้ไข</string>
+    <string name="template_name">แบบฟอร์มที่ 1</string>
+    <string name="ok_button">ตกลง</string>
+    <string name="cancel_button">ยกเลิก</string>
+    <string name="upload_success">อัปโหลดสำเร็จ</string>
+    <string name="upload_fail">อัปโหลดไม่สำเร็จ</string>
+    <string name="select_pic_title">เลือกรูปภาพ</string>
+    <string name="fail">เกิดข้อผิดพลาด</string>
+    <string name="uploading_pdf">กำลังอัปโหลดไฟล์ PDF</string>
+    <string name="loading_pic">กำลังโหลดรูปภาพ</string>
+    <string name="loading_pic_success">โหลดรูปภาพสำเร็จ</string>
+    <string name="speaker">พูดข้อความ...</string>
+    <string name="speaker_not_found">ขออภัย! เทคโนโลยีนี้ไม่รองรับในอุปกรณ์นี้</string>
+    <!--<string name="speaker_not_found">Sorry! Speech recognition is not supported in this device.</string>-->
+    <string name="save_csv_success">บันทึกเป็นไฟล์ CSV เรียบร้อย</string>
+    <string name="save_csv_fail">ไม่สามารถบันทึกเป็นไฟล์ CSV ได้</string>
+    <string name="save_pdf_success">บันทึกเป็นไฟล์สำเร็จ</string>
+    <string name="select_app_title">เลือกแอปพลิเคชัน</string>
+    <string name="select_form">เลือกแบบฟอร์ม</string>
+    <string name="select_pdf">เลือกไฟล์ PDF</string>
+
+    <string name="about_head">ความสามารถของแอปพลิเคชัน</string>
+    <string name="aboutspeech1">1.เพื่อให้ผู้ใช้สามารถกรอกแบบฟอร์มได้อย่างรวดเร็วด้วยระบบแยกแยะเสียงพูด (Speech Recognition)</string>
+    <string name="aboutspeech2">2.เพื่อให้ผู้ใช้สามารถกรอกข้อมูลจากบัตรประชาชนด้วยเครื่องอ่านบัตรประชาชนประชาชน (ID card reader)</string>
+    <string name="aboutspeech3">3.เพื่อให้ผู้ใช้สามารถบันทึกแบบฟอร์มเป็นไฟล์ PDF ได้ทันทีผ่านทางสมาร์ทโฟน (Smartphone)</string>
+    <string name="Thank_head">ขอขอบคุณ</string>
+    <string name="Thank1">https://www.iconsdb.com</string>
+    <string name="Thank2">https://www.flaticon.com</string>
+    <string name="Thank3">Google API (Speech Recognition)</string>
+
+    <string name="itemOpen">เปิดไฟล์ PDF</string>
+    <string name="itemOther1">การใช้งานเบื้องต้น</string>
+    <string name="itemOther2">เกี่ยวกับแอปพลิเคชัน</string>
+    <string name="itemOther3">ตั้งค่า</string>
+    <string name="itemOther4">ออกจากระบบ</string>
+
+    <string name="Howto1">การใช้งานแอปพลิเคชัน</string>
+    <string name="Howto2">1.เมื่อเข้าสู่ระบบแบบฟอร์มด้วยเสียงแล้ว จะสามารถเลือกสร้างและใช้งานแบบฟอร์มของอีเมล์นั้น</string>
+    <string name="Howto3">2.การสร้างแบบฟอร์ม...</string>
+    <string name="Howto4">3.เลือกแบบฟอร์มที่ต้องการจะใช้งาน แล้วใส่ข้อความด้วยเสียงด้วยการกดปุ่มสลับเ ลือกช่องที่ต้องการจะพิมพ์ข้อความและกดที่ปุ่มรูปไมโครโฟนหรือปุ่มของหูฟังโทรศัพท์ เพื่อเริ่มพูด และแก้ไขข้อความด้วยการพิมพ์ได้ กดปุ่มสลับเพื่อดูฟอร์มจริง</string>
+    <string name="Howto5">4.สามารถนำข้อมูลบัตรประชาชนที่ทำการเชื่อมต่อกับเครื่องอ่านบัตรประชาชนมาใส่ในแบบฟอร์มได้ โดยทำการกดปุ่มบนขวา แล้วเลือก \"เชื่อมต่ออุปกรณ์\" เพื่อทำการอ่านข้อมูลจากบัตรประชาชน</string>
+    <string name="Howto6">5.สามารถแนบไฟล์รูปภาพที่มีอยู่ในเตรื่องหรือภาพถ่ายที่ต้องการแนบกับแบบฟอร์ม โดยทำการกดที่ปุ่ม แนบรูปภาพหรือถ่ายภาพที่ด้านขวาล่าง เพื่อทำการแนบรูปภาพหรือภาพถ่าย</string>
+    <string name="Howto7">6.เมื่อเสร็จเรียบร้อยแล้วให้กดปุ่มเมนูมุมบนขวา แล้วเลือก \"บันทึก\" เพื่อทำการบันทึกไฟล์เป็น ไฟล์ PDF หรือ เลือกปุ่ม \"ล้างข้อความ\" เพื่อทำการลบข้อความที่บันทึกทั้งหมด</string>
+    <string name="Howto8">7.สามารถเปิดไฟล์ที่บันทึกได้ที่ตัวเครื่อง ในโฟลเดอร์ที่ชื่อว่า Form By Voice</string>
+
+    <string name="title_other_devices">อุปกรณ์ที่ใช้งานได้</string>
+    <string name="title_paired_devices">อุปกรณ์ที่เชื่อมต่อไว้แล้ว</string>
+    <string name="button_scan">ค้นหาอุปกรณ์</string>
+    <string name="bt_waiting">รอเครื่องอ่านบัตรเชื่อมต่อ</string>
+    <string name="bt_cancel">ยกเลิกการเชื่อมต่อ</string>
+    <string name="bt_connecting">กำลังเชื่อมต่อเครื่องอ่านบัตร</string>
+    <string name="bt_connected">เชื่อมต่อเครื่องอ่านบัตรแล้ว</string>
+    <string name="bt_not_available">บลูทูธไม่พร้อมใช้งาน</string>
+    <string name="bt_read_success">อ่านข้อมูลบัตรสำเร็จ</string>
+
+    <!--<string name="bt_not_available">Bluetooth is not available</string>"รอเครื่องอ่านบัตรเชื่อมต่อ", "ยกเลิกการเชื่อมต่อ", "กำลังเชื่อมต่อเครื่องอ่านบัตร", "เชื่อมต่อเครื่องอ่านบัตรแล้ว"-->
+    <string name="none_paired">ไม่มีอุปกรณ์ที่เชื่อมต่อไว้แล้ว</string>
+    <string name="scanning">กำลังค้นหาอุปกรณ์...</string>
+    <string name="none_found">ไม่พบอุปกรณ์</string>
+    <string name="select_device">เลือกอุปกรณ์</string>
+
+    <string name="title_activity_login">ลงชื่อเข้าใช้</string>
+
+    <string name="button_toggle">สลับ</string>
+
+    <!-- Strings related menu -->
+    <string name="add_new_page">เพิ่มหน้าใหม่</string>
+    <string name="add_page_by_pic">เพิ่มไฟล์รูปภาพ</string>
+    <string name="add_page_by_pdf">เพิ่มไฟล์ PDF</string>
+    <string name="save_file">บันทึก</string>
+    <string name="save_csv">บันทึก CSV</string>
+    <string name="load_csv">โหลดไฟล์ CSV</string>
+    <string name="clear_text">ล้างข้อความ</string>
+    <string name="connect_device">เชื่อมต่ออุปกรณ์</string>
+
+    <!-- Strings related to login -->
+    <string name="answer_logout">คุณแน่ใจที่จะออกจากระบบ ?</string>
+    <string name="logout_title">ออกจากระบบ</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password (optional)</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="error_invalid_email">This email address is invalid</string>
+    <string name="error_invalid_password">This password is too short</string>
+    <string name="error_incorrect_password">This password is incorrect</string>
+    <string name="error_field_required">This field is required</string>
+    <string name="permission_rationale">"Contacts permissions are needed for providing email completions."</string>
+
+    <string-array name="bt_array">
+        <item>ปกติ</item>
+        <item>ชื่อ - นามสกุล</item>
+        <item>เลขบัตรประชาชน</item>
+        <item>วันเดือนปีเกิด</item>
+        <item>บ้านเลขที่</item>
+        <item>หมู่</item>
+        <item>ตำบล</item>
+        <item>อำเภอ</item>
+        <item>จังหวัด</item>
+        <item>อายุ</item>
+        <item>วันออกบัตร</item>
+        <item>วันหมดอายุ</item>
+        <item>วันที่(ณ วันที่ใช้แบบฟอร์ม)</item>
+        <item>เดือน(ณ วันที่ใช้แบบฟอร์ม)</item>
+        <item>ปี(ณ วันที่ใช้แบบฟอร์ม)</item>
+        <item>วัน/เดือน/ปี(ณ วันที่ใช้แบบฟอร์ม)</item>
+        <item>ที่อยู่จาก GPS</item>
+    </string-array>
+
+    <string name="open_location">เปิด Location</string>
+
+    <string name="settings_title">การตั้งค่า</string>
+    <string name="settings_num_title">ตั้งค่าตัวเลข</string>
+    <string-array name="settings_number">
+        <item>เลขไทย</item>
+        <item>เลขอาราบิค</item>
+    </string-array>
+
+    <string name="settings_voice_title">ตั้งค่าภาษาไมโครโฟน</string>
+    <string-array name="settings_voice">
+        <item>th</item>
+        <item>en-US</item>
+    </string-array>
+
+
+</resources>

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/latitudeEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="16.43"
+        android:hint="latitude"
+        android:inputType="numberDecimal|numberSigned"/>
+
+    <EditText
+        android:id="@+id/longitudeEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="longitude"
+        android:text="102.8"
+        android:layout_below="@id/latitudeEdit"
+        android:inputType="numberDecimal|numberSigned"/>
+
+    <EditText
+        android:id="@+id/addrEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="25dp"
+        android:layout_below="@id/longitudeEdit"
+        android:hint="Address"
+        />
+
+    <RadioGroup
+        android:id="@+id/rdGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/addrEdit"
+        android:orientation="horizontal"
+        android:checkedButton="@id/latLng"
+        >
+
+        <RadioButton
+            android:id="@+id/latLng"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Use Lat/lng"
+
+            />
+        <RadioButton
+            android:id="@+id/frmAddr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Use Address"
+            android:layout_marginLeft="50dp"
+            />
+    </RadioGroup>
+    <Button
+        android:id="@+id/actionButton"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/rdGroup"
+        android:text="fetch"
+        android:onClick="onButtonClicked"/>
+    <TextView
+        android:id="@+id/infoText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/holo_blue_dark"
+        android:textSize="25dp"
+        android:layout_below="@id/actionButton"/>
+
+</RelativeLayout>

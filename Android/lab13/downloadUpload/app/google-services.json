@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "282256740205",
+    "firebase_url": "https://downloadupload-75c22.firebaseio.com",
+    "project_id": "downloadupload-75c22",
+    "storage_bucket": "downloadupload-75c22.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:282256740205:android:3b111ec2708c81b8",
+        "android_client_info": {
+          "package_name": "th.ac.kku.plaekjangreed.anusorn.downloadupload"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "282256740205-jcjba92g5n5tlviat7b2lsabttsj23vr.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "th.ac.kku.plaekjangreed.anusorn.downloadupload",
+            "certificate_hash": "88d581204c2e2cbc56aff3a73745536e06e83e9c"
+          }
+        },
+        {
+          "client_id": "282256740205-pu0hbgk2kgtrm4s7onbk0it6valed00i.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDr0wwEMf2mpqIZx8zc3V4oRknjRHmw2K8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "282256740205-pu0hbgk2kgtrm4s7onbk0it6valed00i.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
